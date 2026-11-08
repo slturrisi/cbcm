@@ -91,11 +91,11 @@ export default function Precision() {
 
             <div className="relative min-h-[500px] overflow-hidden rounded-[1.75rem] shadow-[0_30px_80px_rgba(10,64,78,0.16)] sm:min-h-[620px] lg:min-h-[700px]">
               <Image
-                src="/images/overview/precision.png"
-                alt="A trained program staff member providing careful guidance"
+                src="/images/overview/central-ohio-purification-in-charge.webp"
+                alt="Central Ohio’s Purification In-Charge welcoming a visitor at the Purification Center"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="object-cover object-[65%_center]"
               />
 
               <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_42%,rgba(4,38,50,0.64)_100%)]" />

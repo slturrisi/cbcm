@@ -30,3 +30,9 @@ To replace it, add the real photo under `public/images/contact/` and update `com
 ## Current milestone
 
 Contact page has email, phone, and map links using details already present in the supplied footer. The inquiry form now forwards through FormSubmit to the same inbox as Visit; verify activation and delivery before launch. It does not book appointments. No purchasing or scheduling provider has been selected. Book and Results page layouts are now built; see `book-results-preview.md`. Direct checkout still needs pricing, payment, and fulfillment integration.
+
+## Local Purification In-Charge photo
+
+`public/images/overview/central-ohio-purification-in-charge.webp` replaces the previous `precision.png` in the Program page’s Precision / Key to Success section. Supplied by the user as `Hannah Moi Purif copy.jpg.zip`, containing the original 5568 × 3712 JPEG. Site asset is an 1800px WebP, quality 90; no AI alteration or retouching. Responsive object positioning at 65% keeps the staff member visible in the existing portrait-shaped layout. Original upload remains in session attachments. Section copy is unchanged.
+
+[Precision section desktop preview](previews/program-precision-desktop.jpg) · [Mobile preview](previews/program-precision-mobile.jpg). Build, targeted lint, diff check, and Chromium image-load/position/responsive checks passed.
