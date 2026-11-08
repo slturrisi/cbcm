@@ -1,21 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, MessageCircle, Sparkles, Zap, Focus } from "lucide-react";
-
-const reportedResults = [
-  {
-    text: "Ability to think clearly",
-    icon: Sparkles,
-  },
-  {
-    text: "Increased energy, enthusiasm and vitality",
-    icon: Zap,
-  },
-  {
-    text: "Greater mental alertness and ability to concentrate",
-    icon: Focus,
-  },
-];
+import { ArrowRight } from "lucide-react";
 
 export default function BookFeature() {
   return (
@@ -61,35 +46,6 @@ export default function BookFeature() {
             understand how it is carried out.
           </p>
 
-          <div className="mt-16 border-y border-white/15 py-6">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-200">
-              Those who have completed the program report remarkable gains such as:
-            </p>
-
-            <ul className="mt-5 grid gap-4 sm:grid-cols-3">
-              {reportedResults.map((result) => {
-                const Icon = result.icon;
-
-                return (
-                  <li
-                    key={result.text}
-                    className="flex items-start gap-3 border-l border-cyan-200/40 pl-4 text-sm leading-[1.55] text-white/80"
-                  >
-                    <span className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-full bg-cyan-100/10 text-cyan-100">
-                      <Icon size={16} strokeWidth={1.8} />
-                    </span>
-                    <span>{result.text}</span>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-
-          <p className="mt-7 max-w-2xl text-base leading-[1.65] text-white/80">
-            Obtain the book as your first step, or contact us to ask about
-            availability in Central Ohio.
-          </p>
-
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/book"
@@ -97,14 +53,6 @@ export default function BookFeature() {
             >
               Get the Book
               <ArrowRight size={17} strokeWidth={2} />
-            </Link>
-
-            <Link
-              href="/contact"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/40 bg-white/8 px-6 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-white hover:bg-white hover:text-[#0b4353]"
-            >
-              <MessageCircle size={17} strokeWidth={1.9} />
-              Ask for More Information
             </Link>
           </div>
         </div>

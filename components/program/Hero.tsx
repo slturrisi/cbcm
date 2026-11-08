@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowDown, ArrowUpRight } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -37,23 +35,7 @@ export default function Hero() {
             deficiencies.
           </p>
 
-          <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <a
-              href="#biochemical-problem"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-6 text-sm font-bold text-[#073746] transition duration-300 hover:-translate-y-0.5 hover:bg-cyan-50"
-            >
-              Explore the Overview
-              <ArrowDown size={17} strokeWidth={2} />
-            </a>
 
-            <Link
-              href="/book"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/35 bg-white/8 px-6 text-sm font-bold text-white backdrop-blur-sm transition duration-300 hover:-translate-y-0.5 hover:border-white/60 hover:bg-white/14"
-            >
-              Discover the Book
-              <ArrowUpRight size={17} strokeWidth={2} />
-            </Link>
-          </div>
         </div>
       </div>
 

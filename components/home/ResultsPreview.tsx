@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight, Quote } from "lucide-react";
+import { Quote } from "lucide-react";
 
 const stories = [
   {
@@ -10,6 +9,7 @@ const stories = [
     attribution: "Robbie S.",
     image: "/images/results/success-1.jpg",
     imageAlt: "Purification Program success story",
+    position: "object-[50%_80%]",
   },
   {
     title: "Better Perceptions",
@@ -18,6 +18,7 @@ const stories = [
     attribution: "Lisa B.",
     image: "/images/results/success-2.JPG",
     imageAlt: "Purification Program participant success story",
+    position: "object-top",
   },
   {
     title: "A Brighter Future",
@@ -26,6 +27,7 @@ const stories = [
     attribution: "Alicia K.",
     image: "/images/results/success-3.JPG",
     imageAlt: "Clear Body Clear Mind success story",
+    position: "object-center",
   },
 ];
 
@@ -33,7 +35,7 @@ export default function ResultsPreview() {
   return (
     <section className="relative overflow-hidden bg-white px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
       <div className="mx-auto w-full max-w-[1440px]">
-        <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+        <div className="max-w-3xl">
           <div className="max-w-3xl">
             <p className="text-xs font-bold uppercase tracking-[0.26em] text-[#087487] sm:text-sm">
               Real Results
@@ -49,14 +51,6 @@ export default function ResultsPreview() {
               several of their reported results.
             </p>
           </div>
-
-          <Link
-            href="/results"
-            className="hidden w-fit items-center gap-2 border-b border-[#087487]/30 pb-2 text-sm font-bold uppercase tracking-[0.12em] text-[#087487] transition hover:border-[#087487] lg:inline-flex"
-          >
-            Read More Success Stories
-            <ArrowRight size={17} strokeWidth={2} />
-          </Link>
         </div>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
@@ -65,13 +59,13 @@ export default function ResultsPreview() {
               key={story.title}
               className="group flex min-h-full flex-col overflow-hidden border border-[#0c3341]/10 bg-[#f7fbfc] transition duration-500 hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(10,64,78,0.12)]"
             >
-              <div className="relative aspect-[4/3] overflow-hidden bg-[#dcecef]">
+              <div className="relative aspect-[4/5] overflow-hidden bg-[#dcecef]">
                 <Image
                   src={story.image}
                   alt={story.imageAlt}
                   fill
                   sizes="(max-width: 1024px) 100vw, 33vw"
-                  className="object-cover transition duration-700 group-hover:scale-[1.035]"
+                  className={`object-cover ${story.position}`}
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-[#062f3d]/35 via-transparent to-transparent" />
@@ -98,21 +92,6 @@ export default function ResultsPreview() {
           ))}
         </div>
 
-        <div className="mt-10 flex justify-center lg:hidden">
-  <Link
-    href="/results"
-    className="inline-flex items-center gap-2 border-b border-[#087487]/30 pb-2 text-sm font-bold uppercase tracking-[0.12em] text-[#087487] transition hover:border-[#087487]"
-  >
-    Read More Success Stories
-    <ArrowRight
-      size={17}
-      strokeWidth={2}
-      className="transition-transform group-hover:translate-x-1"
-    />
-  </Link>
-</div>
-
-        
       </div>
     </section>
   );

@@ -1,8 +1,9 @@
 import Image from "next/image";
+import type { ReactNode } from "react";
 
 type PageHeroProps = {
   eyebrow: string;
-  title: string;
+  title: ReactNode;
   description: string;
   imageSrc: string;
   imageAlt: string;
@@ -31,7 +32,8 @@ export default function PageHero({
 
       <div className="relative mx-auto flex min-h-[520px] w-full sm:min-h-[560px] max-w-[1440px] items-end px-5 pb-24 pt-36 sm:px-8 sm:pb-28 lg:px-12">
         <div className="max-w-3xl text-white">
-          <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-cyan-100 sm:text-sm">
+          <p className="mb-5 flex items-center gap-4 text-xs font-bold uppercase tracking-[0.3em] text-cyan-100 sm:text-sm">
+            <span aria-hidden="true" className="h-px w-10 shrink-0 bg-cyan-200/80 sm:w-14" />
             {eyebrow}
           </p>
 
