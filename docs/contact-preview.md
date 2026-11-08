@@ -29,3 +29,5 @@ Mocked Chromium checks passed for required/whitespace/email validation, consulta
 ## Unified contact layout
 
 Photo and local address, map, and phone links now share the left column; the message form sits beside them on the right. On mobile they stack in that order. Removed the separate introductory contact block and redundant Email Us / Call Us buttons. Email remains available through the shared footer and form error fallback.
+
+The shared Results/Contact hero now has a longer multi-stop fade with extra room below the copy; Home/Program heroes are unchanged. Current screenshots include this refinement.
