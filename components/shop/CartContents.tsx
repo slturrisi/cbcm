@@ -12,7 +12,7 @@ export default function CartContents() {
   const cart = useCart();
   const [error, setError] = useState("");
   if (!cart.ready) return <p role="status" className="shop-loading py-12 text-[#56717a]">Loading your cart…</p>;
-  if (!cart.items.length) return <div className="rounded-2xl border border-[#0c3341]/10 bg-white px-6 py-16 text-center"><ShoppingBag size={38} strokeWidth={1.2} className="mx-auto text-[#087487]" /><h2 className="mt-6 font-display text-4xl font-semibold text-[#0c3341]">Your cart is empty.</h2><p className="mt-4 text-[#56717a]">Choose your edition and language to get started.</p><Link href="/book" className="mt-7 inline-flex min-h-12 items-center gap-3 rounded-full bg-[#0c5265] px-7 text-sm font-bold !text-white">Explore the book <ArrowRight size={17} /></Link></div>;
+  if (!cart.items.length) return <div className="rounded-2xl border border-[#0c3341]/10 bg-white px-6 py-16 text-center"><ShoppingBag size={38} strokeWidth={1.2} className="mx-auto text-[#087487]" /><h2 className="mt-6 font-display text-4xl font-semibold text-[#0c3341]">Your cart is empty.</h2><p className="mt-4 text-[#56717a]">Choose your language and quantity to get started.</p><Link href="/book" className="mt-7 inline-flex min-h-12 items-center gap-3 rounded-full bg-[#0c5265] px-7 text-sm font-bold !text-white">Explore the book <ArrowRight size={17} /></Link></div>;
   return (
     <div className="grid items-start gap-10 lg:grid-cols-[1.4fr_1fr]">
       <div>
@@ -35,7 +35,7 @@ export default function CartContents() {
           </li>;
         })}</ul>
         {error && <p role="alert" className="mt-4 text-sm text-red-800">{error}</p>}
-        <Link href="/book#order" className="mt-6 inline-flex min-h-11 items-center text-sm font-semibold text-[#087487] underline underline-offset-4">Add another language or edition</Link>
+        <Link href="/book#order" className="mt-6 inline-flex min-h-11 items-center text-sm font-semibold text-[#087487] underline underline-offset-4">Add another language</Link>
       </div>
       <div className="lg:sticky lg:top-8"><OrderSummary items={cart.items} showItems={false} /><Link href="/checkout" className="mt-5 inline-flex min-h-13 w-full items-center justify-center gap-3 rounded-full bg-[#0c5265] px-7 text-sm font-bold !text-white transition hover:bg-[#087487]">Checkout <ArrowRight size={17} /></Link></div>
     </div>

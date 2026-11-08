@@ -7,12 +7,11 @@ test('catalog matches all 17 screenshot languages', () => {
   assert.equal(languages.length, 17);
   for (const language of ['Hebrew', 'Swedish', 'Spanish (Castillian)', 'Spanish (Latin American)', 'Chinese Traditional']) assert(languages.includes(language));
 });
-test('matching variants merge; languages and formats remain separate', () => {
+test('matching variants merge; languages remain separate', () => {
   let cart = addItem([], english);
   cart = addItem(cart, { ...english, quantity: 2 });
   cart = addItem(cart, { ...english, language: 'Hebrew' });
-  cart = addItem(cart, { ...english, format: 'Hardcover' });
-  assert.equal(cart.length, 3); assert.equal(cart[0].quantity, 3); assert.equal(subtotal(cart), 110);
+  assert.equal(cart.length, 2); assert.equal(cart[0].quantity, 3); assert.equal(subtotal(cart), 80);
 });
 test('language changes merge equivalent lines without dropping quantity', () => {
   const cart = [english, { ...english, language: 'French', quantity: 2 }];
@@ -29,4 +28,10 @@ test('untrusted persisted data is validated and only catalog fields survive', ()
   assert.deepEqual(parseCart(JSON.stringify([null, { ...english, format: '__proto__' }, { ...english, quantity: '3' }, { ...english, language: 'Unknown' }])), []);
   assert.deepEqual(parseCart(JSON.stringify([{ ...english, price: 0.01, email: 'not-to-be-persisted' }])), [english]);
   assert.deepEqual(parseCart(JSON.stringify([english, english])), [{ ...english, quantity: 2 }]);
+});
+
+test('hardcover is unavailable and removed from old saved carts', () => {
+  const hardcover = { ...english, format: 'Hardcover' };
+  assert.equal(addItem([], hardcover), null);
+  assert.deepEqual(parseCart(JSON.stringify([hardcover, english])), [english]);
 });

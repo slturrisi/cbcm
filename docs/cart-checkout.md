@@ -1,5 +1,7 @@
 # Cart and checkout
 
+**Current catalog:** softcover (Paperback) only, $20, in all 17 languages. Hardcover has been removed from purchase options and is filtered out of old saved carts. The book artwork now sits directly on the light page background with a subtle shadow; the arched waterfall enclosure is removed.
+
 ## Current flow
 
 `/book` → compact edition/language/quantity selector → Add to cart → `/cart` → `/checkout`.
@@ -12,7 +14,7 @@ The cart is saved under `cbcm-cart-v1` in localStorage, validated when read, and
 
 Languages transcribed from the user's screenshot: Chinese Traditional, Danish, Dutch, English, French, German, Greek, Hebrew, Hungarian, Italian, Japanese, Norwegian, Portuguese, Russian, Spanish (Castillian), Spanish (Latin American), Swedish. The labels match the screenshot. All 17 appear in the Book selector and editable Cart items.
 
-Paperback $20 and Hardcover $30 remain reference display prices pending confirmation for local ordering. User explicitly confirmed free USPS First Class shipping; it appears in the Book purchase box, Cart summary, and Checkout shipping method with a zero shipping charge. No overnight option, delivery-date promise, gift guide, or supported payment-brand claim has been copied from the reference screenshot. The estimated total is subtotal + free shipping; any applicable tax is determined when real payment is connected.
+Softcover (Paperback) $20 remains the reference display price pending confirmation for local ordering. User explicitly confirmed free USPS First Class shipping; it appears in the Book purchase box, Cart summary, and Checkout shipping method with a zero shipping charge. No overnight option, delivery-date promise, gift guide, or supported payment-brand claim has been copied from the reference screenshot. The estimated total is subtotal + free shipping; any applicable tax is determined when real payment is connected.
 
 ## Checkout
 
@@ -30,6 +32,6 @@ Payment fields are read-only presentation placeholders with no names for submiss
 
 Run cart logic checks using Node 22.18+ or Node 24: `node --test tests/cart.test.mjs`.
 
-Five unit tests cover the catalog, merge/separation, language changes, quantity limits, untrusted persisted data, and catalog-priced totals.
+Six unit tests cover the catalog, merge/separation, language changes, quantity limits, untrusted persisted data, and catalog-priced totals.
 
 Production build, ESLint, and TypeScript pass. Chromium verified multiple languages/formats, matching-line merges, quantity/language edits, removal, totals/free shipping, reload and cross-tab synchronization, shipping/billing validation, read-only payment fields, no personal data in cart storage, empty and corrupt cart states, and no-JavaScript fallback. Screenshots checked at 1440px and 390px; additional overflow checks at 640/768/1024/1280px. No page errors or order/payment submissions occurred.

@@ -21,7 +21,7 @@ export default function CheckoutForm() {
     setError(true);
   }
   if (!cart.ready) return <p role="status" className="shop-loading py-12 text-[#56717a]">Loading checkout…</p>;
-  if (!cart.items.length) return <div className="rounded-2xl border border-[#0c3341]/10 bg-white px-6 py-16 text-center"><h2 className="font-display text-4xl font-semibold text-[#0c3341]">Add a book to get started.</h2><p className="mt-4 text-[#56717a]">Your selected editions and languages will appear here.</p><Link href="/book" className="mt-7 inline-flex min-h-12 items-center gap-3 rounded-full bg-[#0c5265] px-7 text-sm font-bold !text-white">Choose your book <ArrowRight size={17} /></Link></div>;
+  if (!cart.items.length) return <div className="rounded-2xl border border-[#0c3341]/10 bg-white px-6 py-16 text-center"><h2 className="font-display text-4xl font-semibold text-[#0c3341]">Add a book to get started.</h2><p className="mt-4 text-[#56717a]">Your selected languages and quantities will appear here.</p><Link href="/book" className="mt-7 inline-flex min-h-12 items-center gap-3 rounded-full bg-[#0c5265] px-7 text-sm font-bold !text-white">Choose your book <ArrowRight size={17} /></Link></div>;
   return (
     <div className="grid items-start gap-10 lg:grid-cols-[1.25fr_1fr]">
       <div>
