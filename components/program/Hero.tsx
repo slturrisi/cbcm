@@ -1,0 +1,63 @@
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
+
+export default function Hero() {
+  return (
+    <section className="relative isolate min-h-[760px] overflow-hidden bg-[#062f3d] text-white lg:min-h-[860px]">
+      <Image
+        src="/images/overview/hero-waterfall.png"
+        alt="A clear waterfall flowing through a lush natural landscape"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-center"
+      />
+
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,31,42,0.92)_0%,rgba(2,31,42,0.78)_34%,rgba(2,31,42,0.3)_68%,rgba(2,31,42,0.12)_100%)]" />
+
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,24,33,0.36)_0%,rgba(2,24,33,0.04)_42%,rgba(2,24,33,0.14)_66%,rgba(2,24,33,0.48)_100%)]" />
+
+      <div className="relative mx-auto flex min-h-[760px] w-full max-w-[1440px] items-end px-5 pb-28 pt-36 sm:px-8 sm:pb-32 lg:min-h-[860px] lg:px-12 lg:pb-40 lg:pt-44">
+        <div className="max-w-4xl">
+          <div className="flex items-center gap-4">
+            <span className="h-px w-10 bg-cyan-200/80 sm:w-14" />
+
+            <p className="text-xs font-bold uppercase tracking-[0.28em] text-cyan-100 sm:text-sm">
+              Program Overview
+            </p>
+          </div>
+
+          <h1 className="mt-7 max-w-4xl font-display text-5xl font-semibold leading-[0.95] tracking-[-0.045em] text-white sm:text-6xl md:text-7xl lg:text-[92px]">
+            The Purification Program
+          </h1>
+
+          <p className="mt-7 max-w-2xl text-lg leading-8 text-white/78 sm:text-xl sm:leading-9 lg:text-[22px]">
+            Addressing the effects of accumulated drugs, toxins and nutritional
+            deficiencies.
+          </p>
+
+          <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a
+              href="#biochemical-problem"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-6 text-sm font-bold text-[#073746] transition duration-300 hover:-translate-y-0.5 hover:bg-cyan-50"
+            >
+              Explore the Overview
+              <ArrowDown size={17} strokeWidth={2} />
+            </a>
+
+            <Link
+              href="/book"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/35 bg-white/8 px-6 text-sm font-bold text-white backdrop-blur-sm transition duration-300 hover:-translate-y-0.5 hover:border-white/60 hover:bg-white/14"
+            >
+              Discover the Book
+              <ArrowUpRight size={17} strokeWidth={2} />
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-64 bg-[linear-gradient(180deg,rgba(247,251,252,0)_0%,rgba(247,251,252,0.05)_15%,rgba(247,251,252,0.18)_34%,rgba(247,251,252,0.52)_62%,rgba(247,251,252,0.88)_84%,#f7fbfc_100%)] sm:h-72 lg:h-80" />
+    </section>
+  );
+}
