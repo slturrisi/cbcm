@@ -40,3 +40,7 @@ Contact page has email, phone, and map links using details already present in th
 ### Corrected staff photo
 
 The user replaced the previous upload with the retouched `Purif IC.png.zip` / `Purif IC.png` (5568 × 3712). Current site asset: `public/images/overview/central-ohio-purification-in-charge-retouched.webp`, optimized to 1800px WebP quality 90, with no additional retouching. A new URL prevents the old image from remaining in the image cache. Existing layout, alt text and 65% positioning are preserved. The earlier generated site asset is retired.
+
+## Chemical exposure illustration
+
+`public/images/overview/chemical-exposure-editorial.webp` replaces `environmental-chemicals.png` in the Program section. Generated from a new editorial prompt about packaged foods/preservatives, sealed cleaning products/insecticides on a separate tray, and industrial surroundings. Original: `exec-e20a0ff1-4edf-456e-a22a-2569374eb9c2.png`; source remains in generated_images. No original food or staff photo was retouched.

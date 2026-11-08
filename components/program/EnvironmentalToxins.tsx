@@ -62,8 +62,8 @@ export default function EnvironmentalToxins() {
 
             <div className="relative min-h-[500px] overflow-hidden rounded-[1.75rem] shadow-[0_30px_80px_rgba(10,64,78,0.16)] sm:min-h-[620px] lg:min-h-[700px]">
               <Image
-                src="/images/overview/environmental-chemicals.png"
-                alt="Everyday household, environmental and consumer substances"
+                src="/images/overview/chemical-exposure-editorial.webp"
+                alt="Editorial illustration of packaged foods, household chemicals and an industrial setting"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"

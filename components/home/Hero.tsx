@@ -47,6 +47,7 @@ export default function Hero() {
                 Program Overview
                 <ArrowRight size={17} strokeWidth={2} />
               </Link>
+              <Link href="/book" className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/55 bg-white/10 px-6 text-sm font-bold !text-white transition hover:bg-white/20 sm:min-h-13 sm:px-7">Get your copy</Link>
             </div>
           </div>
 

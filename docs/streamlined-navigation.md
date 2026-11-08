@@ -1,5 +1,7 @@
 # Streamlined reading and navigation
 
+For the subsequent per-page adjustments (restored hero purchase link, removed separate book promotion, combined gains section, and compact Contact), see [page refinements](page-refinements.md).
+
 The user found repeated cross-page/section prompts distracting, especially on mobile. This pass keeps the five-page structure and makes the main navigation/footer responsible for orientation instead of repeatedly interrupting each section.
 
 ## Page behavior

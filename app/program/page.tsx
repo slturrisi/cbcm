@@ -9,7 +9,6 @@ import Nutrition from "@/components/program/Nutrition";
 import Precision from "@/components/program/Precision";
 import ProgramCTA from "@/components/program/ProgramCTA";
 import PurificationProgram from "@/components/program/PurificationProgram";
-import ReportedGains from "@/components/program/ReportedGains";
 
 export default function ProgramPage() {
   return (
@@ -25,7 +24,6 @@ export default function ProgramPage() {
         <Nutrition />
         <Precision />
         <FreshStart />
-        <ReportedGains />
         <ProgramCTA />
       </main>
 

@@ -16,7 +16,7 @@ export default function ResultsPage() {
     <>
       <Header />
       <main>
-        <PageHero eyebrow="Successes & experiences" title="In their own words." description="Personal accounts from people who have completed the Purification Program." imageSrc="/images/hero/waterfall-hero.png" imageAlt="Waterfall flowing through a green forest" />
+        <PageHero eyebrow="Successes and experiences" title={<>In their <span className="font-medium italic text-cyan-100">own words.</span></>} description="Personal accounts from people who have completed the Purification Program." imageSrc="/images/hero/waterfall-hero.png" imageAlt="Waterfall flowing through a green forest" />
         <StoryCollection />
         <section className="border-t border-[#0c3341]/10 bg-white px-5 py-16 sm:px-8 lg:px-12">
           <div className="mx-auto grid max-w-[1440px] gap-8 lg:grid-cols-[1fr_auto] lg:items-center">

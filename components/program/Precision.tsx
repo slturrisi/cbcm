@@ -88,12 +88,12 @@ export default function Precision() {
 
               <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/20 bg-[#062f3d]/58 p-5 text-white shadow-lg backdrop-blur-md sm:bottom-7 sm:left-7 sm:right-auto sm:max-w-sm sm:p-6">
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-100">
-                  Exact Application
+                  Specialist Staff
                 </p>
 
                 <p className="mt-3 text-sm leading-6 text-white/80">
-                  Every component works as part of a carefully defined and
-                  precisely administered regimen.
+                  Our specialist staff are specifically trained in the
+                  Purification Program and its delivery.
                 </p>
               </div>
             </div>

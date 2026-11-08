@@ -9,6 +9,7 @@ const stories = [
     attribution: "Robbie S.",
     image: "/images/results/success-1.jpg",
     imageAlt: "Purification Program success story",
+    position: "object-[50%_80%]",
   },
   {
     title: "Better Perceptions",
@@ -17,6 +18,7 @@ const stories = [
     attribution: "Lisa B.",
     image: "/images/results/success-2.JPG",
     imageAlt: "Purification Program participant success story",
+    position: "object-top",
   },
   {
     title: "A Brighter Future",
@@ -25,6 +27,7 @@ const stories = [
     attribution: "Alicia K.",
     image: "/images/results/success-3.JPG",
     imageAlt: "Clear Body Clear Mind success story",
+    position: "object-center",
   },
 ];
 
@@ -56,13 +59,13 @@ export default function ResultsPreview() {
               key={story.title}
               className="group flex min-h-full flex-col overflow-hidden border border-[#0c3341]/10 bg-[#f7fbfc] transition duration-500 hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(10,64,78,0.12)]"
             >
-              <div className="relative aspect-[4/3] overflow-hidden bg-[#dcecef]">
+              <div className="relative aspect-[4/5] overflow-hidden bg-[#dcecef]">
                 <Image
                   src={story.image}
                   alt={story.imageAlt}
                   fill
                   sizes="(max-width: 1024px) 100vw, 33vw"
-                  className="object-cover transition duration-700 group-hover:scale-[1.035]"
+                  className={`object-cover ${story.position}`}
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-[#062f3d]/35 via-transparent to-transparent" />
