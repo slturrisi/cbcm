@@ -25,3 +25,7 @@ Required: name, email, message. Optional: phone and multiple inquiry topics (pro
 Messages are sent directly to FormSubmit for forwarding to `columbus@scientology.net`, matching the Visit website. There is no local database. Confirm recipient activation if FormSubmit requests it and verify inbox receipt before launch. An accepted API response alone does not prove delivery. No real emails were sent during this implementation.
 
 Mocked Chromium checks passed for required/whitespace/email validation, consultation preselection, selected topics and contact payload, disabled fields while sending, rejection preserving entries, successful acceptance/reset, and desktop/mobile overflow. Production build, ESLint, and TypeScript passed. Screenshots above show the updated form.
+
+## Unified contact layout
+
+Photo and local address, map, and phone links now share the left column; the message form sits beside them on the right. On mobile they stack in that order. Removed the separate introductory contact block and redundant Email Us / Call Us buttons. Email remains available through the shared footer and form error fallback.
