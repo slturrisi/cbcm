@@ -5,23 +5,18 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageHero from "@/components/layout/PageHero";
 import StoryCollection from "@/components/results/StoryCollection";
-import { resultStories } from "@/content/results";
 
 export const metadata: Metadata = {
   title: "Personal Experiences | Clear Body, Clear Mind Central Ohio",
-  description: "Explore personal experiences published on the original Clear Body, Clear Mind website, organized by topic.",
+  description: "Personal accounts from people who have completed the Purification Program.",
 };
 
 export default function ResultsPage() {
-  const featured = resultStories.find((story) => story.id === "sm")!;
   return (
     <>
       <Header />
       <main>
         <PageHero eyebrow="Successes & experiences" title="In their own words." description="Personal accounts from people who have completed the Purification Program." imageSrc="/images/hero/waterfall-hero.png" imageAlt="Waterfall flowing through a green forest" />
-        <section className="bg-[#073b4b] px-5 py-16 text-white sm:px-8 lg:px-12 lg:py-24" aria-label="Featured personal experience">
-          <figure className="mx-auto max-w-4xl text-center"><p className="text-xs font-bold uppercase tracking-[0.24em] text-cyan-200">A fresh outlook</p><blockquote className="mt-6 font-display text-3xl font-medium leading-tight sm:text-4xl lg:text-5xl">“{featured.quote}”</blockquote><figcaption className="mt-7 text-sm text-cyan-100">— {featured.attribution} · Excerpt from the original CBCM website</figcaption></figure>
-        </section>
         <StoryCollection />
         <section className="border-t border-[#0c3341]/10 bg-white px-5 py-16 sm:px-8 lg:px-12">
           <div className="mx-auto grid max-w-[1440px] gap-8 lg:grid-cols-[1fr_auto] lg:items-center">

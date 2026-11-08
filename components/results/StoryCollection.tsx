@@ -1,35 +1,38 @@
-"use client";
-
-import { useState } from "react";
+import Image from "next/image";
 import { Quote } from "lucide-react";
-import { resultStories, resultTopics, type ResultTopic } from "@/content/results";
+import { resultStories } from "@/content/results";
+
+const photoStories = [
+  { image: "/images/placeholders/results-morning.webp", alt: "AI illustration of a woman enjoying a quiet morning at home; not a person quoted", position: "object-[65%_center]", stories: resultStories.slice(0, 2) },
+  { image: "/images/placeholders/results-outdoors.webp", alt: "AI illustration of a man outdoors on a leafy walking path; not a person quoted", position: "object-center", stories: resultStories.slice(2, 4) },
+  { image: "/images/placeholders/results-sunlight.webp", alt: "AI illustration of a woman smiling on a sunlit porch; not a person quoted", position: "object-center", stories: resultStories.slice(4, 6) },
+];
 
 export default function StoryCollection() {
-  const [topic, setTopic] = useState<ResultTopic>("All stories");
-  const visible = resultStories.filter((story) => topic === "All stories" || story.topic === topic);
   return (
-    <section className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 lg:px-12 lg:py-28" aria-labelledby="stories-heading">
-      <div className="max-w-3xl">
-        <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#087487]">In their own words</p>
-        <h2 id="stories-heading" className="mt-4 font-display text-4xl font-semibold leading-tight text-[#0c3341] sm:text-5xl">Different experiences.<br />Personal perspectives.</h2>
-        <p className="mt-5 text-base leading-7 text-[#56717a]">Explore excerpts from personal accounts published on the original Clear Body, Clear Mind website. These are individual experiences, not promises of a particular outcome.</p>
+    <section className="bg-[#f7fbfc] px-5 pb-20 pt-10 sm:px-8 lg:px-12 lg:pb-28 lg:pt-14" aria-label="Personal stories">
+      <div className="mx-auto max-w-[1440px]">
+        <p className="max-w-2xl text-xs leading-6 text-[#56717a]">Photos are temporary AI illustrations for this design draft. They do not depict the people quoted.</p>
+        <div className="mt-10 space-y-16 lg:mt-12 lg:space-y-24">
+          {photoStories.map((group, index) => (
+            <div key={group.image} className="grid items-center gap-9 lg:grid-cols-2 lg:gap-16 xl:gap-24">
+              <figure className={`relative aspect-[4/3] overflow-hidden rounded-xl bg-[#e5eff0] shadow-[0_20px_55px_rgba(10,64,78,0.08)] lg:aspect-[4/5] ${index % 2 ? "lg:order-2" : ""}`}>
+                <Image src={group.image} alt={group.alt} fill sizes="(max-width: 1023px) 100vw, 46vw" className={`object-cover ${group.position}`} />
+              </figure>
+              <div className="divide-y divide-[#0c3341]/15">
+                {group.stories.map((story) => (
+                  <article key={story.id} className="py-8 first:pt-0 last:pb-0 sm:py-10">
+                    <Quote size={25} strokeWidth={1.3} className="mb-5 text-[#087487]" aria-hidden="true" />
+                    <h2 className="font-display text-3xl font-semibold leading-tight text-[#0c3341] sm:text-4xl">{story.title}</h2>
+                    <blockquote className="mt-5 text-base leading-8 text-[#56717a] sm:text-lg">“{story.quote}”</blockquote>
+                    <p className="mt-5 text-xs font-semibold uppercase tracking-[0.15em] text-[#087487]">— {story.attribution}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="mt-10 flex flex-wrap gap-3" role="group" aria-label="Filter stories by topic">
-        {resultTopics.map((item) => <button key={item} type="button" aria-pressed={topic === item} aria-controls="story-grid" onClick={() => setTopic(item)} className={`min-h-11 rounded-full border px-5 py-2 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#087487] ${topic === item ? "border-[#0c5265] bg-[#0c5265] text-white" : "border-[#0c3341]/20 bg-white text-[#0c5265] hover:border-[#087487]"}`}>{item}</button>)}
-      </div>
-      <p className="mt-6 text-sm text-[#56717a]" role="status">{visible.length} {visible.length === 1 ? "story" : "stories"}</p>
-      <div id="story-grid" className="mt-5 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {visible.map((story) => (
-          <article key={story.id} className="flex flex-col rounded-xl border border-[#0c3341]/10 bg-white p-7 sm:p-9">
-            <div className="flex items-center justify-between gap-4"><Quote size={25} strokeWidth={1.4} className="text-[#087487]" /><p className="text-[0.65rem] font-bold uppercase tracking-[0.15em] text-[#087487]">{story.topic}</p></div>
-            <h3 className="mt-7 font-display text-3xl font-semibold text-[#0c3341]">{story.title}</h3>
-            <blockquote className="mt-5 flex-1 text-base leading-7 text-[#56717a]">“{story.quote}”</blockquote>
-            <p className="mt-8 border-t border-[#0c3341]/10 pt-5 text-sm font-semibold text-[#0c3341]">— {story.attribution}</p>
-            <p className="mt-2 text-xs text-[#56717a]">Excerpt from the original CBCM website</p>
-          </article>
-        ))}
-      </div>
-      <p className="mt-8 text-sm leading-6 text-[#56717a]">These accounts are from the reference website and are not presented as Central Ohio testimonials. <a href="https://clearbodyclearmind.com/results" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Read the original accounts<span className="sr-only"> (opens in a new tab)</span></a>.</p>
     </section>
   );
 }

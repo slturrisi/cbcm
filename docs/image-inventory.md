@@ -11,6 +11,7 @@ The supplied image files below were synced from the desktop project. Their origi
 | Homepage overview | `public/images/hero/biochemical-problem.png` | Existing editorial illustration. Review with user. |
 | Program | `public/images/overview/` | Nine existing images covering program topics and waterfall. Review individually before replacement. |
 | Testimonials | `public/images/results/success-1.jpg`, `success-2.JPG`, `success-3.JPG` | Existing portraits; preserve. Confirm identity, permission, and exact source wording. Never replace attributed portraits with generated people. |
+| Results editorial photos | `public/images/placeholders/results-{morning,outdoors,sunlight}.webp` | Three AI lifestyle illustrations, not images of the contributors. Replace with local photos and exact local successes. See `results-redesign.md`. |
 | Local facility | `public/images/placeholders/reception-concept.webp` | NEW AI concept image on Contact page. Fictional reception lounge, not the real facility. Replace with a local photo. |
 
 ## Local photos to collect

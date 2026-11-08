@@ -32,6 +32,8 @@ The user requested a finished-looking checkout with no setup notices on the page
 
 ## Results page
 
+**Current Results layout:** the later [Results redesign](results-redesign.md) replaces the featured navy block, category filters, and source labels described below with alternating photo/story sections. Quote text and attributions remain unchanged.
+
 Waterfall header, featured account, six short attributed excerpts, topic filters, and links to the Book and Contact pages. Original headings and complete long accounts are not reproduced wholesale. Excerpt wording and initials are preserved; new card titles are editorial navigation labels. These are reference-site accounts, not local testimonials, and no generated people are used to represent contributors. Existing homepage portraits and text are unchanged.
 
 Topics follow the reference: More energy, Wellness, Stress relief, Mental clarity. Filtering works with pressed button states and an announced story count. All six accounts are server-rendered and readable without JavaScript.
