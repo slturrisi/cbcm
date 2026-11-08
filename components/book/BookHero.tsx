@@ -15,10 +15,9 @@ export default function BookHero() {
           <p className="mt-4 text-lg text-[#56717a]">By L. Ron Hubbard</p>
           <p className="mt-7 text-lg leading-8 text-[#56717a]">Read the complete description of the Purification Program, its regimen, and the information presented by its developer.</p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a href="#order" className="inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-[#0c5265] px-7 text-sm font-bold !text-white transition hover:bg-[#087487]">Order through us <ArrowDown size={17} /></a>
+            <a href="#order" className="inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-[#0c5265] px-7 text-sm font-bold !text-white transition hover:bg-[#087487]">Order your copy now <ArrowDown size={17} /></a>
             <a href="#about-the-book" className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#0c5265]/25 px-7 text-sm font-bold text-[#0c5265] transition hover:bg-white">Explore the book</a>
           </div>
-          <p className="mt-5 text-xs leading-5 text-[#56717a]">Available through the Church of Scientology of Central Ohio.<br />Online checkout is being prepared.</p>
         </div>
       </div>
     </section>

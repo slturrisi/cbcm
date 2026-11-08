@@ -13,11 +13,11 @@ The user clarified that orders must go through Central Ohio directly, rather tha
 
 ## Book page
 
-Product hero, concise introduction, three reading themes, and direct-order form. Uses supplied product artwork, not a generated approximation. Reading themes are interface summaries, not a table of contents or invented chapter titles.
+Product hero, book/discoveries blurbs, two text-only testimonial excerpts, and direct-order form. Uses supplied product artwork, not a generated approximation. Discovery headings are editorial summaries, not a table of contents or invented chapter titles. There is no program-page detour from the Book content.
 
-Order selections: paperback/hardcover, quantity (1–99), language, name/email, optional phone, pickup/shipping, shipping address when applicable, and optional notes. The visitor can review and edit their selections. The review accurately describes the selected delivery method and preserves fields when editing.
+Order selections: paperback/hardcover, quantity (1–99), language, name/email, optional phone, pickup/shipping, address (shipping by default, billing for pickup), and optional notes. The visitor can review and edit their selections. The review accurately describes the selected delivery method and preserves fields when editing.
 
-The preview explicitly stops before payment. No price, tax, shipping cost, stock commitment, payment processor, order creation, confirmation email, or fulfillment automation is configured. No order data leaves the browser or is persisted. With JavaScript disabled, a phone fallback replaces the interactive form rather than submitting personal details in the URL. Do not enable a payment button until real ordering is integrated.
+The user requested a finished-looking checkout with no setup notices on the page. The hero says “Order your copy now”; the redundant local availability/setup note is removed. Payment entry point is styled as an active button. There is no live payment processor, order creation, confirmation email, or fulfillment automation. Clicking Continue to payment currently displays an honest integration-unavailable message and cannot create a false paid confirmation. No order data leaves the browser or is persisted. With JavaScript disabled, a phone fallback replaces the interactive form rather than submitting personal details in the URL. The real checkout adapter must replace that fallback before launch.
 
 ### Later integration
 
@@ -38,11 +38,15 @@ Topics follow the reference: More energy, Wellness, Stress relief, Mental clarit
 
 Reviewed November 8, 2026:
 
-- https://clearbodyclearmind.com/shop/book — book presentation, author/subtitle, introductory description, edition/language/quantity selection pattern. Existing user-supplied homepage book description is reused; supporting summaries stay neutral. Publisher price, free-shipping promotion, free-gift offer, and cart integration are not carried over.
+- https://clearbodyclearmind.com/shop/book — book presentation, author/subtitle, introductory description, edition/language/quantity selection pattern. Existing user-supplied homepage book description is reused; supporting summaries stay neutral. The latest draft uses reference-site display prices ($20 paperback / $30 hardcover), which must be confirmed for local ordering. Subtotal updates with the selected quantity and format; shipping/tax are calculated at payment. Free-shipping promotions, free-gift offers, and publisher cart integration are not carried over. Two exact short testimonial excerpts from Robbie S and Alicia K, Actress are included without photos and were matched to this source.
 - https://clearbodyclearmind.com/results — topic structure and six exact short excerpts from accounts attributed to E.E., E.C., T.F, K.K., J.G., S.M. Whitespace-normalized checks matched every excerpt to the retrieved source. The numeric reach claim and medical endorsements are not introduced.
 
 The original pages informed content and organization; their scripts, analytics, cart, and styles are not copied.
 
 ## Verification
 
-Production build, ESLint, TypeScript, and diff checks passed. Chromium verified required and whitespace validation, shipping-address requirements, order review/edit with retained values, switching to pickup, disabled payment, topic filtering, loaded images, and no horizontal overflow at 1440px and 390px. JavaScript-disabled fallback behavior was checked on both pages. Browser captured no page errors and no POST requests; no orders or payments were sent.
+Production build, ESLint, TypeScript, and diff checks passed. Chromium verified required and whitespace validation, shipping-address requirements, order review/edit with retained values, switching to pickup, payment-unavailable fallback/no submission, topic filtering, loaded images, and no horizontal overflow at 1440px and 390px. JavaScript-disabled fallback behavior was checked on both pages. Browser captured no page errors and no POST requests; no orders or payments were sent.
+
+## Latest Book refinement
+
+Address fields are visible by default (shipping selected) and retained as billing fields for pickup. Removed preview/setup banners from the product and order presentation. No card fields collect sensitive payment information; checkout will hand off to the selected processor once configured. Book blurbs also draw on the reference overview page for its discussion of Hubbard’s research and the exercise/sauna/nutrition regimen. These claims are attributed to the book rather than strengthened.
