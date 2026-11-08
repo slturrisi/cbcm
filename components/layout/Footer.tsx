@@ -1,6 +1,5 @@
 import Link from "next/link";
 import {
-  ArrowUpRight,
   Mail,
   MapPin,
   Phone,
@@ -14,39 +13,13 @@ const navigation = [
   { label: "Contact", href: "/contact" },
 ];
 
-const legalLinks = [
-  {
-    label: "Copyright & Trademark",
-    href: "/copyright",
-  },
-  {
-    label: "Medical Disclaimer",
-    href: "/medical-disclaimer",
-  },
-];
-
-const externalLinks = [
-  {
-    label: "L. Ron Hubbard",
-    href: "https://www.lronhubbard.org/",
-  },
-  {
-    label: "Scientology",
-    href: "https://www.scientology.org/",
-  },
-  {
-    label: "Bridge Publications",
-    href: "https://www.bridgepub.com/",
-  },
-];
-
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-[#062f3d] text-white">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
-        <div className="grid gap-12 border-b border-white/15 pb-14 sm:grid-cols-2 lg:grid-cols-[1.25fr_0.65fr_0.75fr_0.85fr_1fr]">
+        <div className="grid gap-12 pb-10 sm:grid-cols-2 lg:grid-cols-[1.2fr_0.7fr_1fr]">
           <div className="max-w-md">
             <Link
               href="/"
@@ -64,14 +37,6 @@ export default function Footer() {
               contact us for information about local availability in Central
               Ohio.
             </p>
-
-            <Link
-              href="/contact"
-              className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-cyan-100 transition hover:text-white"
-            >
-              Request More Information
-              <ArrowUpRight size={16} strokeWidth={2} />
-            </Link>
           </div>
 
           <div>
@@ -94,51 +59,7 @@ export default function Footer() {
 
           <div>
             <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-200">
-              Information
-            </h2>
-
-            <nav className="mt-5 flex flex-col items-start gap-3">
-              {legalLinks.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="text-sm text-white/70 transition hover:text-white"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </nav>
-          </div>
-
-          <div>
-            <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-200">
-              Other Websites
-            </h2>
-
-            <nav className="mt-5 flex flex-col items-start gap-3">
-              {externalLinks.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-1.5 text-sm text-white/70 transition hover:text-white"
-                >
-                  {item.label}
-
-                  <ArrowUpRight
-                    size={13}
-                    strokeWidth={1.9}
-                    className="opacity-60 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
-                  />
-                </a>
-              ))}
-            </nav>
-          </div>
-
-          <div>
-            <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-200">
-              Church of Scientology 
+              Church of Scientology
               <br />
               of Central Ohio
             </h2>

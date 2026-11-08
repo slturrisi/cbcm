@@ -1,5 +1,4 @@
 import BookFeature from "@/components/home/BookFeature";
-import ContactCta from "@/components/home/ContactCta";
 import Hero from "@/components/home/Hero";
 import Overview from "@/components/home/Overview";
 import ResultsPreview from "@/components/home/ResultsPreview";
@@ -16,7 +15,6 @@ export default function Home() {
         <Overview />
         <BookFeature />
         <ResultsPreview />
-        <ContactCta />
       </main>
 
       <Footer />

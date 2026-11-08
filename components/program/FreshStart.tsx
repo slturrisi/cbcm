@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
 
 export default function FreshStart() {
   return (
@@ -60,14 +58,6 @@ export default function FreshStart() {
                   toward greater things in life.
                 </p>
               </div>
-
-              <Link
-                href="/contact"
-                className="mt-10 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-6 text-sm font-bold text-[#073746] transition duration-300 hover:-translate-y-0.5 hover:bg-cyan-50"
-              >
-                Request More Information
-                <ArrowUpRight size={17} strokeWidth={2} />
-              </Link>
             </div>
           </div>
         </div>

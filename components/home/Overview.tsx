@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight, BookOpen } from "lucide-react";
 
 export default function Overview() {
   return (
@@ -31,23 +29,7 @@ export default function Overview() {
             </p>
           </div>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Link
-              href="/program"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#0c5265] px-6 text-sm font-bold !text-white shadow-[0_14px_35px_rgba(7,67,83,0.18)] transition hover:-translate-y-0.5 hover:bg-[#087487]"
-            >
-              About the Program
-              <ArrowRight size={17} strokeWidth={2} />
-            </Link>
 
-            <Link
-              href="/book"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-[#0c5265]/25 bg-white px-6 text-sm font-bold text-[#0c5265] transition hover:-translate-y-0.5 hover:border-[#0c5265]/45"
-            >
-              <BookOpen size={17} strokeWidth={1.9} />
-              Explore the Book
-            </Link>
-          </div>
         </div>
 
         <div className="relative">
