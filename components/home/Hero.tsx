@@ -52,7 +52,7 @@ export default function Hero() {
               Discover the miracle of the Purification Program, an all-natural 
               regimen designed by L. Ron Hubbard to eliminate the accumulated 
               drugs and toxins from your system and free you from the devastating 
-              effects they have on the body, mind and spirit. It's all laid out 
+              effects they have on the body, mind and spirit. It&apos;s all laid out
               in the groundbreaking book{" "}
               <span className="italic">Clear Body, Clear Mind</span>.          
             </p>

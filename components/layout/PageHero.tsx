@@ -16,7 +16,7 @@ export default function PageHero({
   imageAlt,
 }: PageHeroProps) {
   return (
-    <section className="relative isolate min-h-[520px] overflow-hidden bg-[#0c5265]">
+    <section className="relative isolate min-h-[620px] overflow-hidden sm:min-h-[660px] bg-[#0c5265]">
       <Image
         src={imageSrc}
         alt={imageAlt}
@@ -29,7 +29,7 @@ export default function PageHero({
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,37,48,0.9)_0%,rgba(3,46,59,0.66)_50%,rgba(4,63,76,0.15)_100%)]" />
       <div className="absolute inset-0 bg-gradient-to-t from-[#062f3d]/45 via-transparent to-[#062f3d]/25" />
 
-      <div className="relative mx-auto flex min-h-[520px] w-full max-w-[1440px] items-end px-5 pb-16 pt-36 sm:px-8 lg:px-12 lg:pb-20">
+      <div className="relative mx-auto flex min-h-[520px] w-full sm:min-h-[560px] max-w-[1440px] items-end px-5 pb-24 pt-36 sm:px-8 sm:pb-28 lg:px-12">
         <div className="max-w-3xl text-white">
           <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-cyan-100 sm:text-sm">
             {eyebrow}
@@ -45,7 +45,7 @@ export default function PageHero({
         </div>
       </div>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#f7fbfc] to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-56 bg-[linear-gradient(to_bottom,rgba(247,251,252,0)_0%,rgba(247,251,252,0.06)_20%,rgba(247,251,252,0.3)_45%,rgba(247,251,252,0.72)_70%,rgba(247,251,252,0.96)_90%,#f7fbfc_100%)] sm:h-64" />
     </section>
   );
 }

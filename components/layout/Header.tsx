@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import CartLink from "@/components/shop/CartLink";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -52,7 +53,7 @@ export default function Header() {
           </Link>
 
           <nav
-            className="hidden items-center gap-8 lg:flex xl:gap-10"
+            className="hidden items-center gap-5 lg:flex xl:gap-8"
             aria-label="Main navigation"
           >
             {navigation.map((item) => (
@@ -68,6 +69,7 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
+            <CartLink />
             <Link
               href="https://forms.cenohio.org/forms/toxictest"
               className="hidden min-h-11 items-center justify-center rounded-full border border-white/60 px-5 text-xs font-bold uppercase tracking-[0.1em] shadow-[0_10px_28px_rgba(0,93,111,0.18)] transition hover:-translate-y-0.5 hover:bg-white sm:inline-flex sm:px-6"

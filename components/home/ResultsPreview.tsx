@@ -16,7 +16,7 @@ const stories = [
     text:
       "My eyesight, hearing, sense of smell and sense of taste all seemed heightened. I felt cleaner, had more energy and no longer felt dependent on coffee or other stimulants.",
     attribution: "Lisa B.",
-    image: "/images/results/success-2.jpg",
+    image: "/images/results/success-2.JPG",
     imageAlt: "Purification Program participant success story",
   },
   {
@@ -24,7 +24,7 @@ const stories = [
     text:
       "I experienced major changes throughout the program. I felt that negative emotions which had been affecting me were gone, and I became excited about my future again.",
     attribution: "Alicia K.",
-    image: "/images/results/success-3.jpg",
+    image: "/images/results/success-3.JPG",
     imageAlt: "Clear Body Clear Mind success story",
   },
 ];
