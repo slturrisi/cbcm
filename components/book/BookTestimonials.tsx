@@ -1,4 +1,4 @@
-import { Quote } from "lucide-react";
+import { ArrowUp, Quote } from "lucide-react";
 
 // Exact short excerpts from clearbodyclearmind.com/shop/book.
 const testimonials = [
@@ -13,9 +13,10 @@ export default function BookTestimonials() {
         <p className="text-xs font-bold uppercase tracking-[0.24em] text-cyan-200">Personal experiences</p>
         <h2 id="book-testimonials-heading" className="mt-4 font-display text-4xl font-semibold leading-tight sm:text-5xl">A fresh outlook on life.</h2>
         <div className="mt-10 grid gap-10 md:grid-cols-2 md:gap-16">
-          {testimonials.map((item) => <figure key={item.name} className="border-t border-white/20 pt-7"><Quote size={26} strokeWidth={1.3} className="text-cyan-200" /><blockquote className="mt-6 font-display text-2xl leading-relaxed sm:text-3xl">“{item.quote}”</blockquote><figcaption className="mt-7 text-sm text-cyan-100">— {item.name}</figcaption></figure>)}
+          {testimonials.map((item) => <figure key={item.name} className="rounded-xl border border-white/15 bg-white/5 p-7 shadow-[0_15px_40px_rgba(0,0,0,0.08)] sm:p-9"><Quote size={26} strokeWidth={1.3} className="text-cyan-200" /><blockquote className="mt-6 font-display text-2xl leading-relaxed sm:text-3xl">“{item.quote}”</blockquote><figcaption className="mt-7 text-sm text-cyan-100">— {item.name}</figcaption></figure>)}
         </div>
-        <p className="mt-10 text-xs leading-6 text-white/65">Excerpts from personal accounts published on the original Clear Body, Clear Mind website. Individual experiences vary.</p>
+        <a href="#order" className="mt-10 inline-flex min-h-12 items-center gap-3 rounded-full bg-[#cceff5] px-7 text-sm font-bold !text-[#0b4353] transition hover:bg-white">Order your copy now <ArrowUp size={17} /></a>
+        <p className="mt-7 text-xs leading-6 text-white/65">Excerpts from personal accounts published on the original Clear Body, Clear Mind website. Individual experiences vary.</p>
       </div>
     </section>
   );

@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState, type FormEvent } from "react";
-import Link from "next/link";
-import { ArrowRight, ShoppingBag } from "lucide-react";
+import BookHero from "@/components/book/BookHero";
+import { ArrowRight } from "lucide-react";
 
 const inputClass = "mt-2 w-full rounded-lg border border-[#0c3341]/20 bg-white px-4 py-3 text-base text-[#102f3a] outline-none focus:border-[#087487] focus:ring-2 focus:ring-[#087487]/20";
 // Reference-site display prices; confirm local pricing before enabling payment.
@@ -41,16 +41,10 @@ export default function BookOrder() {
   }
 
   return (
-    <section id="order" className="scroll-mt-8 bg-[#edf7f8] px-5 py-20 sm:px-8 lg:px-12 lg:py-28" aria-labelledby="order-heading">
-      <div className="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
-        <div>
-          <ShoppingBag size={28} strokeWidth={1.4} className="text-[#087487]" />
-          <p className="mt-6 text-xs font-bold uppercase tracking-[0.24em] text-[#087487]">Order your copy</p>
-          <h2 id="order-heading" className="mt-4 font-display text-4xl font-semibold leading-tight text-[#0c3341] sm:text-5xl">Your copy.<br />Your next step.</h2>
-          <p className="mt-6 max-w-md text-lg leading-8 text-[#56717a]">Choose your format, enter your details, and take your first step with Clear Body, Clear Mind.</p>
-          <p className="mt-6 max-w-md text-sm leading-7 text-[#56717a]">Questions before ordering? <Link href="/contact" className="font-semibold text-[#087487] underline underline-offset-4">Send us a message</Link> or call <a href="tel:+16142215024" className="whitespace-nowrap text-[#087487] underline underline-offset-4">(614) 221-5024</a>.</p>
-        </div>
-        <div className="rounded-2xl border border-[#0c3341]/10 bg-white p-6 shadow-[0_20px_70px_rgba(10,64,78,0.06)] sm:p-10">
+    <section className="bg-[linear-gradient(135deg,#edf7f8_0%,#f7fbfc_55%,#e4f1f3_100%)] px-5 pb-20 pt-32 sm:px-8 lg:px-12 lg:pb-28 lg:pt-36">
+      <div className="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start lg:gap-20">
+        <BookHero />
+        <div id="order" className="scroll-mt-8 rounded-2xl border border-[#0c3341]/10 border-t-4 border-t-[#1da6b5] bg-white p-6 shadow-[0_24px_80px_rgba(10,64,78,0.12)] sm:p-8 xl:p-10">
           <ol aria-label="Order steps" className="mb-7 flex flex-wrap gap-x-6 gap-y-3 border-b border-[#0c3341]/10 pb-6 text-xs font-semibold text-[#56717a]">
             <li aria-current={!review ? "step" : undefined} className={!review ? "text-[#087487]" : ""}>1. Your details</li>
             <li aria-current={review ? "step" : undefined} className={review ? "text-[#087487]" : ""}>2. Review order</li>

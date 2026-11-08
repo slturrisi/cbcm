@@ -7,6 +7,7 @@ The supplied image files below were synced from the desktop project. Their origi
 | Branding | `public/logos/cbcm-waterfall.png` | Header and favicon. Keep. |
 | Waterfall | `public/images/hero/waterfall-hero.png` | Approved homepage hero and shared page headers. Keep. |
 | Book | `public/images/book/clear-body-clear-mind-book.webp`, `.jpg` | Book render on homepage and Book page. Keep original product artwork. |
+| Open book | `public/images/book/open-book.jpg` | Book page discovery section. Reference-site image: https://clearbodyclearmind.com/img/common/cbcm-book-open.jpg; retrieved November 8, 2026. |
 | Homepage overview | `public/images/hero/biochemical-problem.png` | Existing editorial illustration. Review with user. |
 | Program | `public/images/overview/` | Nine existing images covering program topics and waterfall. Review individually before replacement. |
 | Testimonials | `public/images/results/success-1.jpg`, `success-2.JPG`, `success-3.JPG` | Existing portraits; preserve. Confirm identity, permission, and exact source wording. Never replace attributed portraits with generated people. |

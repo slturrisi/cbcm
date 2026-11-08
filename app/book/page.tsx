@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import BookHero from "@/components/book/BookHero";
 import BookOverview from "@/components/book/BookOverview";
 import BookTestimonials from "@/components/book/BookTestimonials";
 import BookOrder from "@/components/book/BookOrder";
@@ -12,5 +11,5 @@ export const metadata: Metadata = {
 };
 
 export default function BookPage() {
-  return <><Header /><main><BookHero /><BookOverview /><BookTestimonials /><BookOrder /></main><Footer /></>;
+  return <><Header /><main><BookOrder /><BookOverview /><BookTestimonials /></main><Footer /></>;
 }

@@ -50,3 +50,9 @@ Production build, ESLint, TypeScript, and diff checks passed. Chromium verified 
 ## Latest Book refinement
 
 Address fields are visible by default (shipping selected) and retained as billing fields for pickup. Removed preview/setup banners from the product and order presentation. No card fields collect sensitive payment information; checkout will hand off to the selected processor once configured. Book blurbs also draw on the reference overview page for its discussion of Hubbard’s research and the exercise/sauna/nutrition regimen. These claims are attributed to the book rather than strengthened.
+
+## Purchase-first composition
+
+The Book page now starts with a single product/checkout composition: title, original book render over waterfall artwork, and product introduction on the left; the order form starts alongside it on the right at desktop widths. Mobile stacks product then form, with an order anchor to skip directly to the form. Below this come the book/discoveries section and then testimonials, with a return-to-order button. The discovery section includes a locally served open-book photograph and restrained line glyphs in dimensional cards. Testimonials use framed quote cards without invented portraits.
+
+New source asset: `public/images/book/open-book.jpg`, from https://clearbodyclearmind.com/img/common/cbcm-book-open.jpg (645 × 314), retrieved November 8, 2026. Used as actual book photography in the design draft, not a generated replacement.
