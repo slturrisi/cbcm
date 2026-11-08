@@ -27,4 +27,4 @@ To replace it, add the real photo under `public/images/contact/` and update `com
 
 ## Current milestone
 
-Contact page has email, phone, and map links using details already present in the supplied footer. The inquiry form now forwards through FormSubmit to the same inbox as Visit; verify activation and delivery before launch. It does not book appointments. No purchasing or scheduling provider has been selected. Book and Results pages still need their dedicated design/content pass.
+Contact page has email, phone, and map links using details already present in the supplied footer. The inquiry form now forwards through FormSubmit to the same inbox as Visit; verify activation and delivery before launch. It does not book appointments. No purchasing or scheduling provider has been selected. Book and Results page layouts are now built; see `book-results-preview.md`. Direct checkout still needs pricing, payment, and fulfillment integration.
