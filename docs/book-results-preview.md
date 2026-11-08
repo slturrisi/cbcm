@@ -1,5 +1,7 @@
 # Book and Results pages
 
+**Current shopping flow:** Book now uses a compact Add to cart selector; cart editing lives at `/cart`, address/payment layout at `/checkout`. All 17 languages and free USPS First Class shipping are included. See [cart and checkout](cart-checkout.md) for the current behavior. The order-form descriptions below document earlier layout iterations.
+
 ## Direction
 
 Continue the existing CBCM visual design: Cormorant Garamond headlines, Plus Jakarta Sans text, restrained teal/navy, pale backgrounds, generous spacing, original waterfall branding, and supplied book art. The homepage and unified Contact layout are retained.
