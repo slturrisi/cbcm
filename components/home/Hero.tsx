@@ -34,27 +34,9 @@ export default function Hero() {
               </span>
             </h1>
 
-            <div className="mt-7 max-w-[700px] border-l border-cyan-100/55 bg-[#073b4b]/74 px-5 py-4 shadow-[0_16px_38px_rgba(2,34,44,0.2)] backdrop-blur-xl sm:px-6 sm:py-5">
-              <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-cyan-100 sm:text-xs">
-                Increase Your Vitality Now
-              </p>
-
-              <p className="mt-2.5 text-sm leading-[1.55] text-white/86 sm:text-[0.98rem]">
-                Do you feel less alert and aware than you used to? 
-                <br />
-                Feeling tired or drained of energy for no apparent reason? 
-                <br />
-                Do you feel wooden or even lifeless?
-              </p>
-            </div>
-
             <p className="mt-6 max-w-[700px] text-base leading-[1.6] text-white/86 sm:text-lg sm:leading-[1.65]">
-              Discover the miracle of the Purification Program, an all-natural 
-              regimen designed by L. Ron Hubbard to eliminate the accumulated 
-              drugs and toxins from your system and free you from the devastating 
-              effects they have on the body, mind and spirit. It&apos;s all laid out
-              in the groundbreaking book{" "}
-              <span className="italic">Clear Body, Clear Mind</span>.          
+              Discover the program described in L. Ron Hubbard’s book
+              <em> Clear Body, Clear Mind</em> and learn about its availability in Central Ohio.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -64,13 +46,6 @@ export default function Hero() {
               >
                 Program Overview
                 <ArrowRight size={17} strokeWidth={2} />
-              </Link>
-
-              <Link
-                href="/book"
-                className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/55 bg-white/10 px-6 text-sm font-bold !text-white backdrop-blur-md transition hover:-translate-y-0.5 hover:bg-white hover:!text-[#0b4353] sm:min-h-13 sm:px-7"
-              >
-                Get the Book
               </Link>
             </div>
           </div>

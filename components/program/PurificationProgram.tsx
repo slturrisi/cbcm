@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowUpRight, BookOpen } from "lucide-react";
 
 export default function PurificationProgram() {
   return (
@@ -66,23 +64,7 @@ export default function PurificationProgram() {
                 </p>
               </div>
 
-              <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-                <Link
-                  href="/book"
-                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-6 text-sm font-bold text-[#073746] transition duration-300 hover:-translate-y-0.5 hover:bg-cyan-50"
-                >
-                  <BookOpen size={17} strokeWidth={2} />
-                  Explore the Book
-                </Link>
 
-                <Link
-                  href="/contact"
-                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/8 px-6 text-sm font-bold text-white backdrop-blur-sm transition duration-300 hover:-translate-y-0.5 hover:border-white/55 hover:bg-white/14"
-                >
-                  Request Information
-                  <ArrowUpRight size={17} strokeWidth={2} />
-                </Link>
-              </div>
             </div>
           </div>
         </div>

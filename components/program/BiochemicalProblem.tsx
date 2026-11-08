@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
 
 export default function BiochemicalProblem() {
   return (
@@ -55,19 +53,6 @@ export default function BiochemicalProblem() {
                   Together, these factors form part of the biochemical problem.
                 </p>
               </div>
-
-              <Link
-                href="/book"
-                className="group mt-9 inline-flex items-center gap-2 border-b border-[#087487]/30 pb-1 text-sm font-bold uppercase tracking-[0.12em] text-[#087487] transition hover:border-[#087487]"
-              >
-                Learn About the Book
-
-                <ArrowUpRight
-                  size={16}
-                  strokeWidth={2}
-                  className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-                />
-              </Link>
             </div>
           </div>
 

@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight, Quote } from "lucide-react";
+import { Quote } from "lucide-react";
 
 const stories = [
   {
@@ -33,7 +32,7 @@ export default function ResultsPreview() {
   return (
     <section className="relative overflow-hidden bg-white px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
       <div className="mx-auto w-full max-w-[1440px]">
-        <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+        <div className="max-w-3xl">
           <div className="max-w-3xl">
             <p className="text-xs font-bold uppercase tracking-[0.26em] text-[#087487] sm:text-sm">
               Real Results
@@ -49,14 +48,6 @@ export default function ResultsPreview() {
               several of their reported results.
             </p>
           </div>
-
-          <Link
-            href="/results"
-            className="hidden w-fit items-center gap-2 border-b border-[#087487]/30 pb-2 text-sm font-bold uppercase tracking-[0.12em] text-[#087487] transition hover:border-[#087487] lg:inline-flex"
-          >
-            Read More Success Stories
-            <ArrowRight size={17} strokeWidth={2} />
-          </Link>
         </div>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
@@ -98,21 +89,6 @@ export default function ResultsPreview() {
           ))}
         </div>
 
-        <div className="mt-10 flex justify-center lg:hidden">
-  <Link
-    href="/results"
-    className="inline-flex items-center gap-2 border-b border-[#087487]/30 pb-2 text-sm font-bold uppercase tracking-[0.12em] text-[#087487] transition hover:border-[#087487]"
-  >
-    Read More Success Stories
-    <ArrowRight
-      size={17}
-      strokeWidth={2}
-      className="transition-transform group-hover:translate-x-1"
-    />
-  </Link>
-</div>
-
-        
       </div>
     </section>
   );
