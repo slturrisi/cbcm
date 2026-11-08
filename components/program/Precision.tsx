@@ -91,7 +91,7 @@ export default function Precision() {
 
             <div className="relative min-h-[500px] overflow-hidden rounded-[1.75rem] shadow-[0_30px_80px_rgba(10,64,78,0.16)] sm:min-h-[620px] lg:min-h-[700px]">
               <Image
-                src="/images/overview/central-ohio-purification-in-charge.webp"
+                src="/images/overview/central-ohio-purification-in-charge-retouched.webp"
                 alt="Central Ohio’s Purification In-Charge welcoming a visitor at the Purification Center"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

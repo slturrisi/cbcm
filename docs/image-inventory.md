@@ -36,3 +36,7 @@ Contact page has email, phone, and map links using details already present in th
 `public/images/overview/central-ohio-purification-in-charge.webp` replaces the previous `precision.png` in the Program page’s Precision / Key to Success section. Supplied by the user as `Hannah Moi Purif copy.jpg.zip`, containing the original 5568 × 3712 JPEG. Site asset is an 1800px WebP, quality 90; no AI alteration or retouching. Responsive object positioning at 65% keeps the staff member visible in the existing portrait-shaped layout. Original upload remains in session attachments. Section copy is unchanged.
 
 [Precision section desktop preview](previews/program-precision-desktop.jpg) · [Mobile preview](previews/program-precision-mobile.jpg). Build, targeted lint, diff check, and Chromium image-load/position/responsive checks passed.
+
+### Corrected staff photo
+
+The user replaced the previous upload with the retouched `Purif IC.png.zip` / `Purif IC.png` (5568 × 3712). Current site asset: `public/images/overview/central-ohio-purification-in-charge-retouched.webp`, optimized to 1800px WebP quality 90, with no additional retouching. A new URL prevents the old image from remaining in the image cache. Existing layout, alt text and 65% positioning are preserved. The earlier generated site asset is retired.
