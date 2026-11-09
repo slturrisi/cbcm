@@ -1,10 +1,58 @@
-// Exact short excerpts from https://clearbodyclearmind.com/results (reviewed 2026-11-08).
-// Initials identify the reference site's contributors, not Central Ohio participants.
-export const resultStories: { id: string; title: string; quote: string; attribution: string }[] = [
-  { id: "ee", title: "Energy for everyday life", quote: "Since completing the Purification Program, I feel like a different person. I now have much more energy for things that I really want to be doing.", attribution: "E.E." },
-  { id: "ec", title: "A brighter outlook", quote: "After each day I felt brighter, more clear, calmer and more stable as a being.", attribution: "E.C." },
-  { id: "tf", title: "Calmer conversations", quote: "As I went through the Purification Program, I started to notice that my mood started to level off and by the end of the program I was very calm.", attribution: "T.F" },
-  { id: "kk", title: "Enjoying life", quote: "I’m not agitated. I’m just being me and not feeling like a piece of wood, but feeling like a live person and being extroverted and enjoying life.", attribution: "K.K." },
-  { id: "jg", title: "Energy to spare", quote: "I went from a state of having a body I had to drag around and being very tired ALL the time, to a point where I almost effortlessly run my body and have energy to spare.", attribution: "J.G." },
-  { id: "sm", title: "Ready for what’s next", quote: "Now I see things clearer, I feel more able, life is bright and I am ready to make the most of it.", attribution: "S.M." },
+// Local success stories and photo pairings supplied by the site owner.
+// Mario and Leslie use clearly labeled temporary AI illustrations.
+export const resultStories = [
+  {
+    id: "shirley-h",
+    title: "Life is so much more fun!",
+    quote: "As I progress through the Purification Program, I noticed that I kept feeling better and better as the days progressed. I now have more energy, more confidence, and I feel more extroverted. I truly do feel that I have gotten ride of all of the drugs and toxins I've encountered, and that I no longer feel any effects from them. I have this sparkly clean feeling and I'm so energetic. Life is so much more fun!",
+    attribution: "Shirley H.",
+    image: "/images/results/shirley-h.webp",
+    imageAlt: "Portrait of Shirley H.",
+    illustration: false,
+  },
+  {
+    id: "nurah-a",
+    title: "A sense of peace",
+    quote: "I am so grateful to have completed the Purification Program! It was totally amazing. My mind feels very clear. I had a lot of wheezing in my lung when I started, but this has now subsided and it's very clear. I have a lot of energy, I feel happier, more joyful, and I have a sense of peace within my soul. If you haven't done this program, and you have toxins or drug residues in your body, you should definitely run - FAST - to the Purification Program!",
+    attribution: "Nurah A.",
+    image: "/images/results/nurah-a.webp",
+    imageAlt: "Portrait of Nurah A.",
+    illustration: false,
+  },
+  {
+    id: "gordon-m",
+    title: "A new surge of energy",
+    quote: "I initially did not really thing that I needed to do the Purification Program due to my lack of drug use in the past. During the program, however, I re-experienced this unique feeling of tiredness and fatigue which I realized was connected to radiation and chemicals I was exposed to from work I did many years ago. I actually smelled the same odors as I had experienced in the past. One evening, towards the end of the program, I felt noticeably different when I got home. I no longer felt tired, and instead had a new surge of energy like I hadn't ever felt before. I felt good, and I am certain that it was a result of removing chemicals and toxins from my body. Now, I can go about my business in life with much less effort.",
+    attribution: "Gordon M.",
+    image: "/images/results/gordon-m.webp",
+    imageAlt: "Portrait of Gordon M.",
+    illustration: false,
+  },
+  {
+    id: "morgan-r",
+    title: "Living in the now",
+    quote: "I decided to the Purification Program after having taken various medications and receiving some dental work, along with the exposure to every-day toxins in life. Before I did the program, I felt like I wasn't really present in my day-to-day life, and I could feel the effects of the medications in my body. After completing the program, I can tell that everything is out of my body, and I feel like I'm truly here and living in the now!",
+    attribution: "Morgan R.",
+    image: "/images/results/morgan-r.webp",
+    imageAlt: "Portrait of Morgan R.",
+    illustration: false,
+  },
+  {
+    id: "mario-m",
+    title: "A much clearer mind",
+    quote: "The Purification Rundown was a journey and definitely a worthwhile process. I have always been a very health conscious person, and I definitely care about what goes in my body and keeping it clean. I knew this program would be a very good way to not only clean my body, but do it at a high level - which is exactly what happened. Between the program itself, and the book Clear Body, Clear Mind that I studied concurrently, it provided me with information I use regularly concerning my own personal health. It gave me a new perspective on preventing toxins from entering my body. I certainly felt lighter afterwards. I can think more clearly, and I can move forward now and have a much clearer mind. From our world and how we live, there are tons of toxins in everyone’s bodies. This program is what will get rid of them.",
+    attribution: "Mario M.",
+    image: "/images/results/mario-m-illustration.webp",
+    imageAlt: "AI illustration of a man in a bright community-center lobby; not Mario M.",
+    illustration: true,
+  },
+  {
+    id: "leslie-w",
+    title: "Energy left at the end of the day",
+    quote: "Wow. After finishing the Purification Program, I feel fantastic! I got rid of all kinds of toxins, drugs and chemicals. My body now feels so clear and I feel so in tune with it! I also feel so much here and with it, and much more aware of my surroundings. I feel like my energy levels and attitude towards others has also improved so much since completing the program. I have so much more energy in general and at the end of work every day, I'm no longer exhausted. I finish my day with tons of energy left! I am thinking clearly, and making clearer decisions.",
+    attribution: "Leslie W.",
+    image: "/images/results/leslie-w-illustration.webp",
+    imageAlt: "AI illustration of a woman outside a glass entrance; not Leslie W.",
+    illustration: true,
+  },
 ];
