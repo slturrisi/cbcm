@@ -3,30 +3,27 @@ import { Quote } from "lucide-react";
 
 const stories = [
   {
-    title: "I Feel Younger",
-    text:
-      "After completing the program, I felt more energetic, outgoing and happy. The heaviness I had carried with me was gone, and I felt calmer in my everyday environment.",
-    attribution: "Robbie S.",
-    image: "/images/results/success-1.jpg",
-    imageAlt: "Purification Program success story",
-    position: "object-[50%_80%]",
+    title: "Happier, More Calm, More Aware",
+    text: "Between life and medical procedures, I felt like I had accumulated toxins that I needed to get out. The Purification Program did just that. I now feel happier, more calm, and more aware. This makes my life so much easier, especially with my kids.",
+    attribution: "Chelsie D.",
+    image: "/images/results/chelsie-d.webp",
+    imageAlt: "Portrait of Chelsie D.",
+    position: "object-center",
   },
   {
-    title: "Better Perceptions",
-    text:
-      "My eyesight, hearing, sense of smell and sense of taste all seemed heightened. I felt cleaner, had more energy and no longer felt dependent on coffee or other stimulants.",
-    attribution: "Lisa B.",
-    image: "/images/results/success-2.JPG",
-    imageAlt: "Purification Program participant success story",
-    position: "object-top",
+    title: "My Head Is Clear",
+    text: "When I heard about the Purification Program, I like the purpose of it. As I progressed through, I could feel drugs from many years ago coming out of my system. I re-experienced some of the feelings and emotions that were attached to alcohol, and then they were gone. It surprised me just how good I felt towards the end of the program. Now, my body feels clean, my head is clear and I feel younger.",
+    attribution: "Joe L.",
+    image: "/images/results/joe-l.webp",
+    imageAlt: "Portrait of Joe L.",
+    position: "object-center",
   },
   {
-    title: "A Brighter Future",
-    text:
-      "I experienced major changes throughout the program. I felt that negative emotions which had been affecting me were gone, and I became excited about my future again.",
-    attribution: "Alicia K.",
-    image: "/images/results/success-3.JPG",
-    imageAlt: "Clear Body Clear Mind success story",
+    title: "Enthusiasm at an All-Time High",
+    text: "I didn’t have much of a history of drug or alcohol use, and I’ve never had a surgery in my life. I eat clean, work out consistently, and I wasn’t too sure what this rundown would do for me. One thing, however, was that I had COVID in early 2021 and for about 2 weeks, I completely lost all of my taste and smell. It eventually returned, but was maybe 60% at best. I’m excited to report that the Purification Program brought both my taste and smell back 100%! Not only that, my energy, mental clarify, and enthusiasm towards life are at an all-time high!",
+    attribution: "Mike B.",
+    image: "/images/results/mike-b.webp",
+    imageAlt: "Portrait of Mike B.",
     position: "object-center",
   },
 ];
