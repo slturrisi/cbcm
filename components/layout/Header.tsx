@@ -29,7 +29,7 @@ export default function Header() {
           >
             <span className="flex size-12 items-center justify-center lg:size-14">
               <Image
-                src="/logos/purification-mark.png"
+                src="/logos/purification-line-mark.png"
                 alt=""
                 width={56}
                 height={56}
