@@ -57,22 +57,15 @@ export default function EnvironmentalToxins() {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="absolute -bottom-6 -right-5 h-full w-[88%] rounded-[2rem] border border-[#087487]/10 bg-white/70 sm:-bottom-8 sm:-right-8" />
-
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] shadow-[0_30px_80px_rgba(10,64,78,0.16)]">
-              <Image
-                src="/images/overview/everyday-products.webp"
-                alt="Illustration of everyday cleaning and personal-care products alongside packaged snacks, sweets and soft drinks"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-
-
+          <figure>
+            <div className="relative isolate">
+              <div aria-hidden="true" className="pointer-events-none absolute -bottom-5 -right-3 -z-10 h-full w-[88%] rounded-[2rem] border border-[#087487]/10 bg-white/70 sm:-bottom-6 sm:-right-6" />
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] shadow-[0_30px_80px_rgba(10,64,78,0.16)]">
+                <Image src="/images/overview/everyday-products.webp" alt="Illustration of everyday cleaning and personal-care products alongside packaged snacks, sweets and soft drinks" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+              </div>
             </div>
-            <p className="relative mt-6 text-xs leading-6 text-[#56717a]">Everyday exposure can involve household and personal-care products, as well as additives in processed foods.</p>
-          </div>
+            <figcaption className="mt-10 max-w-xl text-sm leading-7 text-[#56717a]">Everyday exposure can involve household and personal-care products, as well as additives in processed foods.</figcaption>
+          </figure>
         </div>
       </div>
     </section>

@@ -27,13 +27,13 @@ export default function Header() {
             aria-label="Clear Body, Clear Mind home"
             onClick={() => setMenuOpen(false)}
           >
-            <span className="flex size-11 items-center justify-center rounded-full bg-[#1da6b5] shadow-[0_10px_30px_rgba(4,74,88,0.22)]">
+            <span className="flex size-12 items-center justify-center lg:size-14">
               <Image
-                src="/logos/cbcm-waterfall.png"
+                src="/logos/purification-mark.png"
                 alt=""
-                width={31}
-                height={31}
-                className="h-8 w-8 object-contain"
+                width={56}
+                height={56}
+                className="h-12 w-12 object-contain lg:h-14 lg:w-14"
                 priority
               />
             </span>

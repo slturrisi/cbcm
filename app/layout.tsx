@@ -22,11 +22,6 @@ export const metadata: Metadata = {
   title: "Clear Body, Clear Mind | Central Ohio",
   description:
     "Learn about the Clear Body, Clear Mind Purification Program in Central Ohio.",
-  icons: {
-    icon: "/logos/cbcm-waterfall.png",
-    shortcut: "/logos/cbcm-waterfall.png",
-    apple: "/logos/cbcm-waterfall.png",
-  },
 };
 
 export default function RootLayout({

@@ -10,11 +10,9 @@ export default function LocalContact() {
         <h1 className="mt-4 font-display text-5xl font-semibold leading-tight text-[#0c3341] sm:text-6xl">Let’s talk.</h1>
         <p className="mt-5 max-w-lg text-base leading-7 text-[#56717a]">Ask about the program, getting the book, or arranging a consultation.</p>
         <figure className="mt-7">
-          <div className="relative aspect-[5/4] overflow-hidden bg-[#e4eff0] sm:aspect-[5/4]">
-            <Image src="/images/placeholders/reception-concept.webp" alt="AI-generated concept of a bright reception lounge; not the Central Ohio facility" fill sizes="(max-width: 1023px) 100vw, 50vw" className="object-cover" />
-            <span className="absolute bottom-5 left-5 right-5 w-fit bg-white/95 px-4 py-2 text-xs font-medium text-[#0c3341]">AI concept image · Local photography to follow</span>
+          <div className="overflow-hidden rounded-2xl bg-[#e4eff0]">
+            <Image src="/images/overview/central-ohio-exterior.webp" alt="Exterior of the Church of Scientology of Central Ohio at dusk, with the illuminated entrance and grounds" width={1800} height={1203} sizes="(max-width: 1023px) 100vw, 50vw" className="h-auto w-full" />
           </div>
-          <figcaption className="mt-3 text-xs leading-5 text-[#56717a]">Temporary image for layout review. This does not depict our facility.</figcaption>
         </figure>
         <div className="mt-7">
           <h2 className="mt-3 font-display text-2xl font-semibold leading-tight text-[#0c3341] sm:text-3xl">Central Ohio Purification Center</h2>
