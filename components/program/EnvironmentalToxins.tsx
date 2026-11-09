@@ -60,29 +60,18 @@ export default function EnvironmentalToxins() {
           <div className="relative">
             <div className="absolute -bottom-6 -right-5 h-full w-[88%] rounded-[2rem] border border-[#087487]/10 bg-white/70 sm:-bottom-8 sm:-right-8" />
 
-            <div className="relative min-h-[500px] overflow-hidden rounded-[1.75rem] shadow-[0_30px_80px_rgba(10,64,78,0.16)] sm:min-h-[620px] lg:min-h-[700px]">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] shadow-[0_30px_80px_rgba(10,64,78,0.16)]">
               <Image
-                src="/images/overview/chemical-exposure-editorial.webp"
-                alt="Editorial illustration of packaged foods, household chemicals and an industrial setting"
+                src="/images/overview/everyday-products.webp"
+                alt="Illustration of everyday cleaning and personal-care products alongside packaged snacks, sweets and soft drinks"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
 
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_42%,rgba(4,38,50,0.62)_100%)]" />
 
-              <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/20 bg-[#062f3d]/58 p-5 text-white shadow-lg backdrop-blur-md sm:bottom-7 sm:left-7 sm:right-auto sm:max-w-sm sm:p-6">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-100">
-                  Everyday Exposure
-                </p>
-
-                <p className="mt-3 text-sm leading-6 text-white/80">
-                  Toxic substances may be encountered through food,
-                  workplaces, household products and the surrounding
-                  environment.
-                </p>
-              </div>
             </div>
+            <p className="relative mt-6 text-xs leading-6 text-[#56717a]">Everyday exposure can involve household and personal-care products, as well as additives in processed foods.</p>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BookOpen } from "lucide-react";
+import { BookOpen } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -40,13 +40,6 @@ export default function Hero() {
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="/program"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-6 text-sm font-bold !text-[#0b4353] shadow-[0_16px_45px_rgba(0,36,48,0.22)] transition hover:-translate-y-0.5 hover:bg-cyan-50 sm:min-h-13 sm:px-7"
-              >
-                Program Overview
-                <ArrowRight size={17} strokeWidth={2} />
-              </Link>
               <Link href="/book" className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/55 bg-white/10 px-6 text-sm font-bold !text-white transition hover:bg-white/20 sm:min-h-13 sm:px-7">Get your copy</Link>
             </div>
           </div>
