@@ -71,7 +71,7 @@ export default function Header() {
           <div className="flex items-center gap-3">
             <CartLink />
             <Link
-              href="https://forms.cenohio.org/forms/toxictest"
+              href="/toxic-test"
               className="hidden min-h-11 items-center justify-center rounded-full border border-white/60 px-5 text-xs font-bold uppercase tracking-[0.1em] shadow-[0_10px_28px_rgba(0,93,111,0.18)] transition hover:-translate-y-0.5 hover:bg-white sm:inline-flex sm:px-6"
               style={{
                 backgroundColor: "#cceff5",
@@ -110,7 +110,7 @@ export default function Header() {
             ))}
 
             <Link
-              href="https://forms.cenohio.org/forms/toxictest"
+              href="/toxic-test"
               onClick={() => setMenuOpen(false)}
               className="mt-5 inline-flex min-h-12 items-center justify-center rounded-full border border-white/60 px-5 text-xs font-bold uppercase tracking-[0.1em]"
               style={{

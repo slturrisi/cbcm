@@ -1,0 +1,387 @@
+{
+  "slug": "toxictest",
+  "title": "How Toxic Are You?",
+  "description": "We live in a world riddled with drugs, while our air, water and even our food contain chemical toxins. Their effects dull senses, cloud memory and lower energy. Answer the following questions to see how toxic you are.",
+  "version": "fixture-version",
+  "questions": [
+    {
+      "id": "264b0884-abe7-446c-b611-6601631cce6a",
+      "question_order": 1,
+      "label": "What is your full name?",
+      "description": null,
+      "field_type": "name",
+      "required": true,
+      "options": null,
+      "conditional_logic": null
+    },
+    {
+      "id": "3aa44454-6411-45b5-8afb-bbfcde37b4d8",
+      "question_order": 2,
+      "label": "Have you felt fatigued now and then for no apparent reason?",
+      "description": null,
+      "field_type": "radio",
+      "required": false,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "conditional_logic": null
+    },
+    {
+      "id": "038f5ea2-780e-4321-9083-e8bd9747f72c",
+      "question_order": 3,
+      "label": "Do you sometimes feel “wooden” and lifeless?",
+      "description": null,
+      "field_type": "radio",
+      "required": false,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "conditional_logic": null
+    },
+    {
+      "id": "846564ef-8bf8-48db-8b8f-2fcf0098c078",
+      "question_order": 4,
+      "label": "Have you ever experienced drug “flashbacks”?",
+      "description": null,
+      "field_type": "radio",
+      "required": false,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "conditional_logic": null
+    },
+    {
+      "id": "a94c5abd-cf61-490f-8488-fdc6196c9016",
+      "question_order": 5,
+      "label": "Do you feel less alert than you used to?",
+      "description": null,
+      "field_type": "radio",
+      "required": false,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "conditional_logic": null
+    },
+    {
+      "id": "013415d8-3316-4126-ab95-4a62292dcb84",
+      "question_order": 6,
+      "label": "Do you sometimes get a feeling of light-headedness or a feeling of being “spaced out”?",
+      "description": null,
+      "field_type": "radio",
+      "required": false,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "conditional_logic": null
+    },
+    {
+      "id": "68b67082-cc0e-4987-9d57-ca2cb1843732",
+      "question_order": 7,
+      "label": "Do you feel irritable without reason or cause?",
+      "description": null,
+      "field_type": "radio",
+      "required": false,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "conditional_logic": null
+    },
+    {
+      "id": "a03a7305-9a94-49c3-985a-fe6f0dc67a9c",
+      "question_order": 8,
+      "label": "Do you have less energy and vitality than you used to?",
+      "description": null,
+      "field_type": "radio",
+      "required": false,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "conditional_logic": null
+    },
+    {
+      "id": "27a2bd38-43fb-41ee-b801-9850172413f1",
+      "question_order": 9,
+      "label": "Do you find it difficult to get excited about people or things?",
+      "description": null,
+      "field_type": "radio",
+      "required": false,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "conditional_logic": null
+    },
+    {
+      "id": "3315f3c4-87ae-4670-9e56-982296939d1f",
+      "question_order": 10,
+      "label": "Do you find you feel anxious but don’t know why?",
+      "description": null,
+      "field_type": "radio",
+      "required": false,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "conditional_logic": null
+    },
+    {
+      "id": "7be437ea-474b-4591-992f-9d25f26dbdcf",
+      "question_order": 11,
+      "label": "Do you have trouble learning new things even when you are interested in them?",
+      "description": null,
+      "field_type": "radio",
+      "required": false,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "conditional_logic": null
+    },
+    {
+      "id": "58403d47-3f5c-4ec9-ae86-c76eb3ed6419",
+      "question_order": 12,
+      "label": "Which of the following toxins have you been exposed to?",
+      "description": null,
+      "field_type": "checkbox",
+      "required": false,
+      "options": [
+        {
+          "label": "Alcohol",
+          "value": "alcohol"
+        },
+        {
+          "label": "Anesthetics",
+          "value": "anesthetics"
+        },
+        {
+          "label": "Prescription drugs/painkillers",
+          "value": "prescription-drugs-painkillers"
+        },
+        {
+          "label": "Over-the-counter drugs",
+          "value": "over-the-counter-drugs"
+        },
+        {
+          "label": "Street Drugs",
+          "value": "street-drugs"
+        },
+        {
+          "label": "Biochemical, such as Agent Orange",
+          "value": "biochemical-such-as-agent-orange"
+        },
+        {
+          "label": "Food preservatives",
+          "value": "food-preservatives"
+        },
+        {
+          "label": "Processed Foods",
+          "value": "processed-foods"
+        },
+        {
+          "label": "Radiation (such as computer screens, x-rays, TV)",
+          "value": "radiation-such-as-computer-screens-x-rays-tv"
+        }
+      ],
+      "conditional_logic": null
+    },
+    {
+      "id": "fcc45aca-d894-408e-aab9-d31e32f3cedb",
+      "question_order": 13,
+      "label": "Which of these following toxins have you been exposed to?",
+      "description": null,
+      "field_type": "checkbox",
+      "required": false,
+      "options": [
+        {
+          "label": "Agricultural chemicals",
+          "value": "agricultural-chemicals"
+        },
+        {
+          "label": "Fertilizers",
+          "value": "fertilizers"
+        },
+        {
+          "label": "Industrial chemicals",
+          "value": "industrial-chemicals"
+        },
+        {
+          "label": "Pesticides",
+          "value": "pesticides"
+        },
+        {
+          "label": "Plastics/microplastics",
+          "value": "plastics-microplastics"
+        },
+        {
+          "label": "Household cleaners/detergents",
+          "value": "household-cleaners-detergents"
+        },
+        {
+          "label": "Air pollution",
+          "value": "air-pollution"
+        },
+        {
+          "label": "Auto exhaust",
+          "value": "auto-exhaust"
+        },
+        {
+          "label": "Dry Cleaning",
+          "value": "dry-cleaning"
+        },
+        {
+          "label": "Smoke inhalation",
+          "value": "smoke-inhalation"
+        },
+        {
+          "label": "Chlorinated and Fluoridated water",
+          "value": "chlorinated-and-fluoridated-water"
+        }
+      ],
+      "conditional_logic": null
+    },
+    {
+      "id": "9a7a9a13-a438-454b-abf5-1f1bc006f431",
+      "question_order": 14,
+      "label": "Which of these other toxins have you been exposed to?",
+      "description": null,
+      "field_type": "checkbox",
+      "required": false,
+      "options": [
+        {
+          "label": "Arsenic",
+          "value": "arsenic"
+        },
+        {
+          "label": "Asbestos",
+          "value": "asbestos"
+        },
+        {
+          "label": "Lead",
+          "value": "lead"
+        },
+        {
+          "label": "Mercury",
+          "value": "mercury"
+        },
+        {
+          "label": "Paint Dye",
+          "value": "paint-dye"
+        },
+        {
+          "label": "Toxic Metals",
+          "value": "toxic-metals"
+        },
+        {
+          "label": "Solvents",
+          "value": "solvents"
+        },
+        {
+          "label": "Petroleum",
+          "value": "petroleum"
+        },
+        {
+          "label": "Aluminium",
+          "value": "aluminium"
+        }
+      ],
+      "conditional_logic": null
+    },
+    {
+      "id": "cd02d2c7-3938-4301-ba76-868653c05375",
+      "question_order": 15,
+      "label": "What is your phone number?",
+      "description": null,
+      "field_type": "phone",
+      "required": false,
+      "options": null,
+      "conditional_logic": null
+    },
+    {
+      "id": "15e566d4-5fd4-49df-991c-1e0487d56acb",
+      "question_order": 16,
+      "label": "What is your email address?",
+      "description": null,
+      "field_type": "email",
+      "required": true,
+      "options": null,
+      "conditional_logic": null
+    },
+    {
+      "id": "de894764-1117-473d-a4a1-98c84f18b5a7",
+      "question_order": 17,
+      "label": "What is your mailing address?",
+      "description": null,
+      "field_type": "address",
+      "required": false,
+      "options": null,
+      "conditional_logic": null
+    }
+  ]
+}
