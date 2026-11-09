@@ -1,11 +1,13 @@
 import Image from "next/image";
+import MobileHeroImage from "@/components/layout/MobileHeroImage";
 import Link from "next/link";
 import { BookOpen } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative isolate min-h-[900px] overflow-hidden bg-[#f7fbfc] md:min-h-[860px] lg:min-h-screen">
-      <div className="absolute inset-0 overflow-hidden bg-[#0c5265]">
+    <section className="relative isolate overflow-hidden bg-[#062f3d] md:min-h-[860px] md:bg-[#f7fbfc] lg:min-h-screen">
+      <MobileHeroImage src="/images/hero/waterfall-hero.png" alt="Bright waterfall flowing through a peaceful forest" />
+      <div className="absolute inset-0 hidden overflow-hidden bg-[#0c5265] md:block">
         <Image
           src="/images/hero/waterfall-hero.png"
           alt="Bright waterfall flowing through a peaceful forest"
@@ -20,8 +22,8 @@ export default function Hero() {
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,32,42,0.22)_0%,transparent_32%,rgba(3,37,48,0.22)_72%,rgba(247,251,252,0.16)_100%)]" />
       </div>
 
-      <div className="relative mx-auto flex min-h-[900px] w-full max-w-[1440px] items-start px-5 pb-40 pt-32 sm:px-8 md:min-h-[860px] md:items-center md:pt-36 lg:min-h-screen lg:px-12 lg:pb-44 lg:pt-40">
-        <div className="grid w-full gap-12 md:grid-cols-[minmax(0,1fr)_minmax(300px,0.72fr)] md:items-center lg:gap-12">
+      <div className="relative mx-auto flex w-full max-w-[1440px] items-start px-5 pb-24 pt-5 sm:px-8 md:min-h-[860px] md:items-center md:pt-36 lg:min-h-screen lg:px-12 lg:pb-44 lg:pt-40">
+        <div className="grid w-full gap-9 md:gap-12 md:grid-cols-[minmax(0,1fr)_minmax(300px,0.72fr)] md:items-center lg:gap-12">
           <div className="max-w-[760px] text-white">
             <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.26em] text-cyan-100 sm:text-xs md:mb-5 md:text-sm md:tracking-[0.3em]">
               The Effective Purification Program
@@ -82,7 +84,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-48 bg-[linear-gradient(to_bottom,rgba(247,251,252,0)_0%,rgba(247,251,252,0.08)_20%,rgba(247,251,252,0.35)_48%,rgba(247,251,252,0.78)_76%,#f7fbfc_100%)] sm:h-60 lg:h-64" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 md:h-48 bg-[linear-gradient(to_bottom,rgba(247,251,252,0)_0%,rgba(247,251,252,0.08)_20%,rgba(247,251,252,0.35)_48%,rgba(247,251,252,0.78)_76%,#f7fbfc_100%)] md:h-60 lg:h-64" />
     </section>
   );
 }

@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
-import {
-  Cormorant_Garamond,
-  Plus_Jakarta_Sans,
-} from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const sans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
+const sans = localFont({
+  src: "./fonts/plus-jakarta-sans-latin.woff2",
+  weight: "200 800",
+  style: "normal",
   variable: "--font-sans",
   display: "swap",
 });
 
-const display = Cormorant_Garamond({
-  subsets: ["latin"],
+const display = localFont({
+  src: "./fonts/cormorant-garamond-latin.woff2",
+  style: "normal",
   variable: "--font-display",
-  weight: ["500", "600", "700"],
+  weight: "300 700",
   display: "swap",
 });
 
