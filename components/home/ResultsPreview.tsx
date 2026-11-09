@@ -39,12 +39,11 @@ export default function ResultsPreview() {
             <figcaption className="px-5 py-4 text-xs tracking-wide text-[#56717a]">Central Ohio Purification Center</figcaption>
           </figure>
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#087487]">The program in Central Ohio</p>
+            <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#087487]">The Purification Program in Central Ohio</p>
             <h2 className="mt-4 font-display text-4xl font-semibold leading-tight text-[#0c3341] sm:text-5xl">A place for your fresh start.</h2>
             <div className="mt-6 space-y-5 text-base leading-8 text-[#56717a] sm:text-lg">
               <p>The Purification Program brings together exercise, time in the sauna and nutrition in a precise regimen developed by L. Ron Hubbard.</p>
               <p>Here at our Central Ohio center, staff specifically trained in the program and its delivery guide participants through its steps. Our dedicated delivery space brings the program and its support together in one place.</p>
-              <p>Below, three participants share their own experiences.</p>
             </div>
           </div>
         </div>
