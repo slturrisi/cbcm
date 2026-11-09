@@ -10,10 +10,10 @@ export default function DrugResidues() {
           <div className="relative order-2 lg:order-1">
             <div className="absolute -bottom-6 -left-5 h-full w-[88%] rounded-[2rem] border border-[#087487]/10 bg-[#dff3f5] sm:-bottom-8 sm:-left-8" />
 
-            <div className="relative min-h-[480px] overflow-hidden rounded-[1.75rem] shadow-[0_30px_80px_rgba(10,64,78,0.16)] sm:min-h-[600px] lg:min-h-[680px]">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] shadow-[0_30px_80px_rgba(10,64,78,0.16)]">
               <Image
-                src="/images/overview/drug-residues.png"
-                alt="A reflective person representing the continuing effects of past drug exposure"
+                src="/images/overview/daily-task-strain.webp"
+                alt="Illustration of a man struggling to concentrate while working at his desk"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -27,7 +27,7 @@ export default function DrugResidues() {
                 </p>
 
                 <p className="mt-3 text-sm leading-6 text-white/80">
-                  Hubbard concluded that certain drug residues could remain
+                  L. Ron Hubbard concluded that certain drug residues could remain
                   lodged in fatty tissues long after their original use.
                 </p>
               </div>
