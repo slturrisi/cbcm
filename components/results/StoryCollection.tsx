@@ -17,12 +17,11 @@ export default function StoryCollection() {
                   <figure className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] bg-[#e5eff0] shadow-[0_15px_40px_rgba(10,64,78,0.08)]">
                     <Image src={story.image} alt={story.imageAlt} fill sizes="(max-width: 767px) 320px, (max-width: 1023px) 280px, 360px" className="object-cover object-center" />
                   </figure>
-                  {story.illustration && <p className="mt-3 text-center text-xs leading-5 text-[#56717a]">AI illustration; not the person quoted.</p>}
                 </div>
                 <div>
                   <Quote size={24} strokeWidth={1.3} className="mb-4 text-[#087487]" aria-hidden="true" />
                   <h2 className="font-display text-3xl font-semibold leading-tight text-[#0c3341] sm:text-4xl">{story.title}</h2>
-                  <blockquote className="mt-5 text-base leading-8 text-[#56717a] sm:text-lg">“{story.quote}”</blockquote>
+                  <blockquote className="mt-5 text-base leading-8 text-[#56717a] sm:text-lg">“{story.id === "mario-m" ? story.quote.split("Clear Body, Clear Mind").map((part, i) => <span key={i}>{i > 0 && <em>Clear Body, Clear Mind</em>}{part}</span>) : story.quote}”</blockquote>
                   <p className="mt-5 text-xs font-semibold uppercase tracking-[0.15em] text-[#087487]">— {story.attribution}</p>
                 </div>
               </article>
