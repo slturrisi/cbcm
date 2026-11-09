@@ -1,10 +1,10 @@
 // Local success stories and photo pairings supplied by the site owner.
-// Mario and Leslie use clearly labeled temporary AI illustrations.
+// Mario and Leslie use generated illustrative portraits.
 export const resultStories = [
   {
     id: "shirley-h",
     title: "Life is so much more fun!",
-    quote: "As I progress through the Purification Program, I noticed that I kept feeling better and better as the days progressed. I now have more energy, more confidence, and I feel more extroverted. I truly do feel that I have gotten ride of all of the drugs and toxins I've encountered, and that I no longer feel any effects from them. I have this sparkly clean feeling and I'm so energetic. Life is so much more fun!",
+    quote: "As I went through the Purification Program, I noticed that I kept feeling better and better as the days progressed. I now have more energy, more confidence, and I feel more extroverted. I truly do feel that I have gotten rid of all of the drugs and toxins I've encountered, and that I no longer feel any effects from them. I have this sparkly clean feeling and I'm so energetic. Life is so much more fun!",
     attribution: "Shirley H.",
     image: "/images/results/shirley-h.webp",
     imageAlt: "Portrait of Shirley H.",
@@ -13,9 +13,9 @@ export const resultStories = [
   {
     id: "nurah-a",
     title: "A sense of peace",
-    quote: "I am so grateful to have completed the Purification Program! It was totally amazing. My mind feels very clear. I had a lot of wheezing in my lung when I started, but this has now subsided and it's very clear. I have a lot of energy, I feel happier, more joyful, and I have a sense of peace within my soul. If you haven't done this program, and you have toxins or drug residues in your body, you should definitely run - FAST - to the Purification Program!",
+    quote: "I am so grateful to have completed the Purification Program! It was amazing. My mind feels very clear. I have a lot of energy, I feel happier, more joyful, and I have a sense of peace within my soul. If you haven't done this program, and you have toxins or drug residuals in your body, you should definitely run - FAST - to the Purification Program!",
     attribution: "Nurah A.",
-    image: "/images/results/nurah-a.webp",
+    image: "/images/results/nurah-a-centered.webp",
     imageAlt: "Portrait of Nurah A.",
     illustration: false,
   },
@@ -31,7 +31,7 @@ export const resultStories = [
   {
     id: "morgan-r",
     title: "Living in the now",
-    quote: "I decided to the Purification Program after having taken various medications and receiving some dental work, along with the exposure to every-day toxins in life. Before I did the program, I felt like I wasn't really present in my day-to-day life, and I could feel the effects of the medications in my body. After completing the program, I can tell that everything is out of my body, and I feel like I'm truly here and living in the now!",
+    quote: "I decided to the Purification Program after having taken various medications and receiving some dental work, along with the exposure to daily toxins in life. Before I did the program, I felt like I wasn't really present in my day-to-day life, and I could feel the effects of the medications in my body. After completing the program, I can tell that everything is out of my body, and I feel like I'm truly here and living in the now!",
     attribution: "Morgan R.",
     image: "/images/results/morgan-r.webp",
     imageAlt: "Portrait of Morgan R.",
@@ -40,9 +40,9 @@ export const resultStories = [
   {
     id: "mario-m",
     title: "A much clearer mind",
-    quote: "The Purification Rundown was a journey and definitely a worthwhile process. I have always been a very health conscious person, and I definitely care about what goes in my body and keeping it clean. I knew this program would be a very good way to not only clean my body, but do it at a high level - which is exactly what happened. Between the program itself, and the book Clear Body, Clear Mind that I studied concurrently, it provided me with information I use regularly concerning my own personal health. It gave me a new perspective on preventing toxins from entering my body. I certainly felt lighter afterwards. I can think more clearly, and I can move forward now and have a much clearer mind. From our world and how we live, there are tons of toxins in everyone’s bodies. This program is what will get rid of them.",
+    quote: "The Purification Rundown was a journey, and most definitely a worthwhile process. I have always been a very health-conscious person, and I cared about what went in my body. I knew this program would be a good way to not only clean my body, but do it at a high level - which is exactly what happened. Between the program itself, and the book Clear Body, Clear Mind by L. Ron Hubbard, I have new information that I now use regularly concerning my own personal health, and I have a new perspective on preventing toxins from entering my body. I certainly feel lighter, and I can think more clearly, and I can move forward now and feel like I have a much clearer mind. From our world and how we live, there are tons of toxins in everyone’s bodies. This program is what will get rid of them.",
     attribution: "Mario M.",
-    image: "/images/results/mario-m-illustration.webp",
+    image: "/images/results/mario-m-refined.webp",
     imageAlt: "AI illustration of a man in a bright community-center lobby; not Mario M.",
     illustration: true,
   },
