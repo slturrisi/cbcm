@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Quote } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Quote } from "lucide-react";
 
 const stories = [
   {
@@ -32,6 +33,21 @@ export default function ResultsPreview() {
   return (
     <section className="relative overflow-hidden bg-white px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
       <div className="mx-auto w-full max-w-[1440px]">
+        <div className="mb-20 grid items-center gap-9 lg:mb-24 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+          <figure className="overflow-hidden rounded-2xl bg-[#e5eff0] shadow-[0_20px_60px_rgba(10,64,78,0.1)]">
+            <Image src="/images/overview/central-ohio-delivery-space.webp" alt="Participants and staff in the Central Ohio Purification Center delivery space" width={1800} height={1200} sizes="(max-width: 1023px) 100vw, 50vw" className="h-auto w-full" />
+            <figcaption className="px-5 py-4 text-xs tracking-wide text-[#56717a]">Central Ohio Purification Center</figcaption>
+          </figure>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#087487]">The program in Central Ohio</p>
+            <h2 className="mt-4 font-display text-4xl font-semibold leading-tight text-[#0c3341] sm:text-5xl">A place for your fresh start.</h2>
+            <div className="mt-6 space-y-5 text-base leading-8 text-[#56717a] sm:text-lg">
+              <p>The Purification Program brings together exercise, time in the sauna and nutrition in a precise regimen developed by L. Ron Hubbard.</p>
+              <p>Here at our Central Ohio center, staff specifically trained in the program and its delivery guide participants through its steps. Our dedicated delivery space brings the program and its support together in one place.</p>
+              <p>Below, three participants share their own experiences.</p>
+            </div>
+          </div>
+        </div>
         <div className="max-w-3xl">
           <div className="max-w-3xl">
             <p className="text-xs font-bold uppercase tracking-[0.26em] text-[#087487] sm:text-sm">
@@ -88,7 +104,9 @@ export default function ResultsPreview() {
             </article>
           ))}
         </div>
-
+        <div className="mt-12 flex justify-center border-t border-[#0c3341]/10 pt-10 sm:mt-16">
+          <Link href="/program" className="inline-flex min-h-13 items-center justify-center gap-3 rounded-full bg-[#0c5265] px-8 text-sm font-bold !text-white transition hover:bg-[#073b4b]">Program Overview <ArrowRight size={18} /></Link>
+        </div>
       </div>
     </section>
   );

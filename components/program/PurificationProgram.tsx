@@ -2,42 +2,11 @@ import Image from "next/image";
 
 export default function PurificationProgram() {
   return (
-    <section className="relative isolate overflow-hidden bg-[#062f3d] text-white">
-      <div className="relative min-h-[820px] lg:min-h-[900px]">
-        <Image
-          src="/images/overview/purification-program.jpg"
-          alt="A calm and professionally maintained Purification Program facility"
-          fill
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,36,48,0.96)_0%,rgba(3,36,48,0.9)_34%,rgba(3,36,48,0.56)_60%,rgba(3,36,48,0.22)_100%)]" />
-
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,29,39,0.25)_0%,rgba(3,29,39,0.06)_40%,rgba(3,29,39,0.55)_100%)]" />
-
-        <div className="relative mx-auto flex min-h-[820px] w-full max-w-[1440px] items-center px-5 py-28 sm:px-8 lg:min-h-[900px] lg:px-12 lg:py-36">
-          <div className="relative max-w-3xl">
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute -left-4 -top-20 hidden font-display text-[92px] font-semibold leading-none tracking-[-0.07em] text-cyan-100/[0.07] lg:block xl:-left-10 xl:text-[126px]"
-            >
-              PURIFICATION
-            </div>
-
-            <div className="relative">
-              <div className="flex items-center gap-4">
-                <span className="h-px w-10 bg-cyan-200/65" />
-
-                <p className="text-xs font-bold uppercase tracking-[0.24em] text-cyan-100">
-                  The Purification Program
-                </p>
-              </div>
-
-              <h2 className="mt-7 max-w-3xl font-display text-4xl font-semibold leading-[1.02] tracking-[-0.04em] text-white sm:text-5xl lg:text-7xl">
-                An exact program developed to address a growing threat.
-              </h2>
-
+    <section className="relative isolate overflow-hidden bg-[#062f3d] px-5 py-20 text-white sm:px-8 lg:px-12 lg:py-28">
+      <div className="mx-auto grid max-w-[1440px] items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+        <div>
+          <div className="flex items-center gap-4"><span aria-hidden="true" className="h-px w-10 bg-cyan-200/65" /><p className="text-xs font-bold uppercase tracking-[0.24em] text-cyan-100">The Purification Program</p></div>
+          <h2 className="mt-7 font-display text-4xl font-semibold leading-[1.04] tracking-[-0.03em] text-white sm:text-5xl lg:text-6xl">An exact program developed to address a growing threat.</h2>
               <div className="mt-8 max-w-2xl space-y-6 text-base leading-8 text-white/74 sm:text-lg sm:leading-9">
                 <p>
                   The Purification Program was developed by L. Ron Hubbard to
@@ -63,13 +32,13 @@ export default function PurificationProgram() {
                   the book <em>Clear Body, Clear Mind</em>.
                 </p>
               </div>
-
-
-            </div>
-          </div>
         </div>
-
-        <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-32 bg-[linear-gradient(180deg,rgba(6,47,61,0)_0%,rgba(6,47,61,0.28)_45%,rgba(6,47,61,0.75)_100%)]" />
+        <figure className="mx-auto w-full max-w-[560px]">
+          <div className="overflow-hidden rounded-2xl bg-[#e5eff0] shadow-[0_24px_70px_rgba(0,0,0,0.18)]">
+            <Image src="/images/overview/purif-center.webp" alt="Participants exercising on treadmills in a bright Purification Center" width={1086} height={1448} sizes="(max-width: 1023px) 100vw, 45vw" className="h-auto w-full -scale-x-100 brightness-[1.04]" />
+          </div>
+          <figcaption className="mt-4 text-sm leading-6 text-white/70">Exercise is one part of the program’s regimen, together with sauna and nutrition.</figcaption>
+        </figure>
       </div>
     </section>
   );
