@@ -2,7 +2,7 @@ export const languages = [
   "Chinese Traditional", "Danish", "Dutch", "English", "French", "German", "Greek", "Hebrew", "Hungarian", "Italian", "Japanese", "Norwegian", "Portuguese", "Russian", "Spanish (Castillian)", "Spanish (Latin American)", "Swedish",
 ] as const;
 // Display prices from the supplied reference. Verify local prices before live checkout.
-export const prices = { Paperback: 20 } as const;
+export const prices = { Paperback: 20, Hardcover: 30 } as const;
 export type Format = keyof typeof prices;
 export type Language = (typeof languages)[number];
 export type CartItem = { format: Format; language: Language; quantity: number };

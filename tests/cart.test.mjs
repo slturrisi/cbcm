@@ -30,8 +30,15 @@ test('untrusted persisted data is validated and only catalog fields survive', ()
   assert.deepEqual(parseCart(JSON.stringify([english, english])), [{ ...english, quantity: 2 }]);
 });
 
-test('hardcover is unavailable and removed from old saved carts', () => {
-  const hardcover = { ...english, format: 'Hardcover' };
-  assert.equal(addItem([], hardcover), null);
-  assert.deepEqual(parseCart(JSON.stringify([hardcover, english])), [english]);
+test('hardcover and paperback remain distinct and use their own prices', () => {
+  const hardcover = { ...english, format: 'Hardcover', quantity: 2 };
+  const cart = addItem([english], hardcover);
+  assert.equal(cart.length, 2);
+  assert.equal(subtotal(cart), 80);
+  assert.deepEqual(parseCart(JSON.stringify(cart)), cart);
+  const changed = changeLanguage(cart, itemKey(hardcover), 'French');
+  assert.equal(changed[0].format, 'Paperback');
+  assert.equal(changed[1].format, 'Hardcover');
+  assert.equal(changed[1].language, 'French');
+  assert.equal(subtotal(changed), 80);
 });
