@@ -22,7 +22,7 @@ export const resultStories = [
   {
     id: "gordon-m",
     title: "A new surge of energy",
-    quote: "I initially did not really thing that I needed to do the Purification Program due to my lack of drug use in the past. During the program, however, I re-experienced this unique feeling of tiredness and fatigue which I realized was connected to radiation and chemicals I was exposed to from work I did many years ago. I actually smelled the same odors as I had experienced in the past. One evening, towards the end of the program, I felt noticeably different when I got home. I no longer felt tired, and instead had a new surge of energy like I hadn't ever felt before. I felt good, and I am certain that it was a result of removing chemicals and toxins from my body. Now, I can go about my business in life with much less effort.",
+    quote: "I initially did not really think that I needed to do the Purification Program due to my lack of drug use in the past. During the program, however, I re-experienced this unique feeling of tiredness and fatigue which I realized was connected to radiation and chemicals I was exposed to from work I did many years ago. I actually smelled the same odors as I had experienced in the past. One evening, towards the end of the program, I felt noticeably different when I got home. I no longer felt tired, and instead had a new surge of energy like I hadn't ever felt before. I felt good, and I am certain that it was a result of removing chemicals and toxins from my body. Now, I can go about my business in life with much less effort.",
     attribution: "Gordon M.",
     image: "/images/results/gordon-m.webp",
     imageAlt: "Portrait of Gordon M.",
@@ -33,7 +33,7 @@ export const resultStories = [
     title: "Living in the now",
     quote: "I decided to the Purification Program after having taken various medications and receiving some dental work, along with the exposure to daily toxins in life. Before I did the program, I felt like I wasn't really present in my day-to-day life, and I could feel the effects of the medications in my body. After completing the program, I can tell that everything is out of my body, and I feel like I'm truly here and living in the now!",
     attribution: "Morgan R.",
-    image: "/images/results/morgan-r.webp",
+    image: "/images/results/morgan-r-updated.webp",
     imageAlt: "Portrait of Morgan R.",
     illustration: false,
   },
