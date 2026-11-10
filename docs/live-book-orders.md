@@ -2,13 +2,13 @@
 
 ## Current state
 
-The book selector, browser-persisted cart, language variants and quantity controls already work. The catalog currently displays one paperback at $20 in 17 languages, with free USPS First Class shipping. These are current site settings, not a verified live payment catalog.
+The book selector, browser-persisted cart, language variants and quantity controls already work. The catalog currently displays paperback at $20 and hardcover at $30, each in 17 languages, with free USPS First Class shipping. These are current site settings, not a verified live payment catalog.
 
 Checkout is a prototype: its card fields are read-only, no processor SDK or checkout API exists, and Place order deliberately shows a not-connected message. It creates no order record, takes no payment and sends no order notification. There is no order-management screen, payment webhook, fulfillment/tracking flow or published returns page.
 
 ## Recommended implementation
 
-Use the organization’s existing suitable processor if available. If selecting a new one, evaluate Stripe for this small single-book catalog: retain the current book/cart experience and use the processor’s secure checkout or payment fields. A separate full storefront platform is not necessary to keep the present site.
+Use the organization’s existing suitable processor if available. Square and PayPal have been identified as existing organization accounts. Evaluate Square for this small single-book catalog: retain the current book/cart experience and use the processor’s secure checkout or payment fields. A separate full storefront platform is not necessary to keep the present site.
 
 1. Confirm the merchant account, payout destination and who manages refunds. Account onboarding and bank details are completed in the payment provider’s dashboard, not in chat.
 2. Confirm the $20 selling price, availability of the 17 language editions, quantity limits, shipping destinations and actual mailing service, applicable tax handling and the return/refund policy.
