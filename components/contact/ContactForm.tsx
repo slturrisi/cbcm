@@ -122,7 +122,6 @@ export default function ContactForm() {
         <label className="block text-sm font-semibold text-[#0c3341]">Your message <span aria-hidden="true">*</span>
           <textarea name="message" required rows={5} maxLength={5000} className={`${fieldClass} resize-y`} />
         </label>
-        <p className="text-xs leading-5 text-[#56717a]">We’ll use your details to respond to your inquiry. Messages are sent through FormSubmit.</p>
         <button type="submit" className="inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-full bg-[#0c5265] px-7 text-sm font-bold text-white transition hover:bg-[#087487] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#087487] disabled:cursor-wait disabled:opacity-65 sm:w-auto">
           {sending ? "Sending…" : "Send Message"}<ArrowRight size={17} />
         </button>
