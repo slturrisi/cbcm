@@ -33,10 +33,7 @@ export default function BookOverview() {
           <div><dt className="text-xs font-bold uppercase tracking-[0.16em] text-[#087487]">Editions available here</dt><dd className="mt-2 font-display text-3xl font-semibold text-[#0c3341]">Softcover &amp; hardcover</dd></div>
         </dl>
         <div className="mt-16 grid gap-6 md:grid-cols-3">{discoveries.map((item) => {const Icon = item.icon;return <article key={item.title} className="rounded-xl border border-[#0c3341]/10 bg-[#f7fbfc] p-7 sm:p-8"><span className="flex size-12 items-center justify-center rounded-full border border-[#087487]/15 bg-white text-[#087487]"><Icon size={23} strokeWidth={1.4} /></span><h3 className="mt-6 font-display text-3xl font-semibold text-[#0c3341]">{item.title}</h3><p className="mt-4 text-base leading-7 text-[#56717a]">{item.text}</p></article>;})}</div>
-        <div className="mt-14 border-t border-[#0c3341]/10 pt-10">
-          <h3 className="font-display text-3xl font-semibold text-[#0c3341] sm:text-4xl">Experiences reported by participants.</h3>
-          <p className="mt-5 max-w-3xl text-base leading-8 text-[#56717a]">Bridge Publications describes reports from participants around the world of clearer thinking and concentration, greater energy and enthusiasm, a more positive outlook, and an improved sense of well-being. These are personal reports; individual experiences vary.</p>
-        </div>
+
       </div>
     </section>
   );
