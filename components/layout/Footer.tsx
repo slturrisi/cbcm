@@ -33,9 +33,8 @@ export default function Footer() {
             </p>
 
             <p className="mt-6 text-sm leading-[1.6] text-white/65">
-              Learn more about the Purification Program, obtain the book and
-              contact us for information about local availability in Central
-              Ohio.
+              Learn more about the Purification Program, get the book, or
+              speak with a consultant about enrolling.
             </p>
           </div>
 

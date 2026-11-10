@@ -38,7 +38,7 @@ export default function Hero() {
 
             <p className="mt-6 max-w-[700px] text-base leading-[1.6] text-white/86 sm:text-lg sm:leading-[1.65]">
               Discover the program described in L. Ron Hubbard’s book
-              <em> Clear Body, Clear Mind</em> and learn about its availability in Central Ohio.
+              <em> Clear Body, Clear Mind</em>.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
