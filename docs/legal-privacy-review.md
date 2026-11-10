@@ -32,3 +32,11 @@ Prepared for the organization's legal/privacy reviewers. These pages consolidate
 8. Before activating Square or another processor: revise privacy for the actual payment/order flow, confirm taxes/shipping/refunds/returns and notification/fulfillment practices, and publish purchase terms as appropriate. Payments remain inactive.
 
 No retention automation, consent tracking, analytics integration, cookie banner, payment processing or new data sharing is introduced by this change. Public statements should be adjusted to confirmed practices after review.
+
+## Owner-requested revisions
+
+- Removed the in-page section menus on both pages and centralized body/heading typography. Copyright and medical body paragraphs now share 16px sans-serif text and 32px line height; headings use the same serif hierarchy.
+- Purchase/privacy wording is prepared for the planned Square flow, as requested, rather than displaying the current prototype limitation. It conditionally describes online orders, Square payments, delivery information, transaction records and refunds. This copy change does not connect checkout: the verified implementation still has no payment/order API. Confirm the final wording against the actual integration before accepting real payments.
+- The owner confirmed that the supplied success stories are truthful personal accounts from parishioners who completed the program. Shared disclosure text describes their own experiences/opinions/viewpoints and makes no promise or guarantee of results. It appears with the success sections and medical notice.
+- The disclosure intentionally concerns the stories, not every photograph: Mario and Leslie still have illustrative AI portraits. No unsupported paid/unpaid-actor or compensation claim is added. Legal should confirm releases and whether additional image/endorsement disclosures are appropriate.
+- Square's linked privacy notice returned HTTP 200 during verification.
