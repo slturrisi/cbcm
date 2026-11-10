@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type FormEvent } from "react";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const recipient = "columbus@scientology.net";
@@ -126,6 +127,7 @@ export default function ContactForm() {
           {sending ? "Sending…" : "Send Message"}<ArrowRight size={17} />
         </button>
       </fieldset>
+      <p className="mt-4 text-xs text-[#56717a]"><Link href="/privacy" className="underline underline-offset-4">Privacy Policy</Link></p>
       <div aria-live="polite" aria-atomic="true">
         {status === "success" && <p className="mt-6 rounded-lg bg-[#eef8fa] p-4 text-sm leading-6 text-[#0c5265]">Thank you—your inquiry has been submitted. We’ll be in touch.</p>}
       </div>
