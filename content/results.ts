@@ -1,5 +1,5 @@
 // Local success stories and photo pairings supplied by the site owner.
-// Mario and Leslie use generated illustrative portraits.
+// Nurah, Mario and Leslie use generated illustrative portraits.
 export const resultStories = [
   {
     id: "shirley-h",
@@ -15,9 +15,9 @@ export const resultStories = [
     title: "A sense of peace",
     quote: "I am so grateful to have completed the Purification Program! It was amazing. My mind feels very clear. I have a lot of energy, I feel happier, more joyful, and I have a sense of peace within my soul. If you haven't done this program, and you have toxins or drug residuals in your body, you should definitely run - FAST - to the Purification Program!",
     attribution: "Nurah A.",
-    image: "/images/results/nurah-a-centered.webp",
-    imageAlt: "Portrait of Nurah A.",
-    illustration: false,
+    image: "/images/results/nurah-story-illustration.webp",
+    imageAlt: "AI illustration of a woman in a community-center lobby; not Nurah A.",
+    illustration: true,
   },
   {
     id: "gordon-m",
