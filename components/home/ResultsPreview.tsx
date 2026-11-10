@@ -1,3 +1,4 @@
+import { testimonialVariation } from "@/content/testimonial-notice";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Quote } from "lucide-react";
@@ -58,9 +59,8 @@ export default function ResultsPreview() {
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-[1.65] text-[#56717a] sm:text-lg sm:leading-[1.7]">
-              People from many different backgrounds have shared their
-              experiences after completing the Purification Program. Here are
-              several of their reported results.
+              Parishioners who have completed the Purification Program share
+              their own experiences below.
             </p>
           </div>
         </div>
@@ -103,6 +103,7 @@ export default function ResultsPreview() {
             </article>
           ))}
         </div>
+        <p className="mt-8 max-w-4xl text-xs leading-6 text-[#56717a]">{testimonialVariation}</p>
         <div className="mt-12 flex justify-center border-t border-[#0c3341]/10 pt-10 sm:mt-16">
           <Link href="/program" className="inline-flex min-h-13 items-center justify-center gap-3 rounded-full bg-[#0c5265] px-8 text-sm font-bold !text-white transition hover:bg-[#073b4b]">Program Overview <ArrowRight size={18} /></Link>
         </div>

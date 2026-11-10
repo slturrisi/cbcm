@@ -1,6 +1,8 @@
+import { testimonialSource, testimonialVariation } from "@/content/testimonial-notice";
+
 export default function MedicalNotice() {
   return (
-<div className="space-y-6 text-base leading-8 text-[#56717a] sm:text-lg">
+<div className="space-y-6">
             <p>
               The Purification Program cannot be construed as a recommendation
               of medical treatment or medication. It is not professed to be
@@ -23,7 +25,8 @@ export default function MedicalNotice() {
               The author makes no warranties or representations as to the
               effectiveness of the Purification Program.
             </p>
-          <p>The Toxic Test is an informational questionnaire, and its score is not a medical diagnosis. Personal accounts describe individual experiences and do not guarantee similar results for others.</p>
+          <p>The Toxic Test is an informational questionnaire, and its score is not a medical diagnosis.</p>
+<p>{testimonialSource} {testimonialVariation}</p>
 </div>
   );
 }
