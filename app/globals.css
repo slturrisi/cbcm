@@ -47,3 +47,8 @@ a {
   background: rgba(29, 166, 181, 0.22);
   color: var(--navy);
 }
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
