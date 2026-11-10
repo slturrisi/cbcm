@@ -115,17 +115,17 @@ export default function Footer() {
 
           <div className="flex flex-wrap gap-x-5 gap-y-2 lg:justify-end">
             <Link
-              href="/copyright"
+              href="/legal"
               className="transition hover:text-white"
             >
-              Copyright & Trademark
+              Legal & Disclaimers
             </Link>
 
             <Link
-              href="/medical-disclaimer"
+              href="/privacy"
               className="transition hover:text-white"
             >
-              Medical Disclaimer
+              Privacy Policy
             </Link>
           </div>
         </div>

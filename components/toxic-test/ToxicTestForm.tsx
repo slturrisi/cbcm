@@ -134,6 +134,7 @@ export default function ToxicTestForm() {
         </div>
         {hasDraft && <button type="button" disabled={busy} onClick={reset} className="mt-5 min-h-11 text-xs text-[#56717a] underline underline-offset-4">Start again</button>}
       </form>}
+      <p className="mt-6 text-xs text-[#56717a]"><Link href="/privacy" className="underline underline-offset-4">Privacy Policy</Link></p>
     </div>
   );
 }
